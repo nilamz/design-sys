@@ -94,6 +94,31 @@
   --shadow-xl:   var(--truf-shadow-xl);
   --shadow-glow: var(--truf-shadow-glow);
 
+  /* Typography sizes */
+  --text-xs:  var(--truf-text-xs);
+  --text-sm:  var(--truf-text-sm);
+  --text-base: var(--truf-text-base);
+  --text-lg:  var(--truf-text-lg);
+  --text-xl:  var(--truf-text-xl);
+  --text-2xl: var(--truf-text-2xl);
+  --text-3xl: var(--truf-text-3xl);
+  --text-4xl: var(--truf-text-4xl);
+  --text-5xl: var(--truf-text-5xl);
+  --text-6xl: var(--truf-text-6xl);
+
+  /* Font weights */
+  --font-weight-light:    var(--truf-weight-300);
+  --font-weight-normal:   var(--truf-weight-400);
+  --font-weight-medium:   var(--truf-weight-500);
+  --font-weight-semibold: var(--truf-weight-600);
+  --font-weight-bold:     var(--truf-weight-700);
+  --font-weight-extrabold: var(--truf-weight-800);
+
+  /* Line heights */
+  --leading-tight:   var(--truf-leading-tight);
+  --leading-normal:  var(--truf-leading-normal);
+  --leading-relaxed: var(--truf-leading-relaxed);
+
   /* Spacing (Tailwind spacing namespace) */
   --spacing-0:  var(--truf-space-0);
   --spacing-1:  var(--truf-space-1);

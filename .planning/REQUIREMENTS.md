@@ -16,17 +16,17 @@
 
 ### Tokens
 
-- [x] **TOKEN-01**: colors.json defines forest (50-900), lime (50-900), mint (50-400), neutral (50-900), cream, and semantic colors (success, warning, error, info)
-- [x] **TOKEN-02**: spacing.json defines 4px base unit scale (0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96)
-- [x] **TOKEN-03**: typography.json defines three font families (sans: Inter, mono: JetBrains Mono, display: Fraunces), sizes xs-6xl, weights (300-800), and line heights
-- [x] **TOKEN-04**: radii.json defines none, sm (8px), md (12px), lg (16px), xl (24px), pill (64px), full (9999px)
-- [x] **TOKEN-05**: shadows.json defines xs, sm, md, lg, xl, and glow (lime-tinted)
-- [x] **TOKEN-06**: motion.json defines easing curves (standard, emphasized, decelerated) and durations (fast, base, slow, slower)
-- [x] **TOKEN-07**: z-index.json defines layered scale (base, sticky, drawer, modal, toast, tooltip)
+- [x] **TOKEN-01**: colors.css defines forest (50-900), lime (50-900), mint (50-400), neutral (50-900), cream, and semantic colors (success, warning, error, info)
+- [x] **TOKEN-02**: spacing.css defines 4px base unit scale (0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96)
+- [x] **TOKEN-03**: typography.css defines three font families (sans: Inter, mono: JetBrains Mono, display: Fraunces), sizes xs-6xl, weights (300-800), and line heights
+- [x] **TOKEN-04**: radii.css defines none, sm (8px), md (12px), lg (16px), xl (24px), pill (64px), full (9999px)
+- [x] **TOKEN-05**: shadows.css defines xs, sm, md, lg, xl, and glow (lime-tinted)
+- [x] **TOKEN-06**: motion.css defines easing curves (standard, emphasized, decelerated) and durations (fast, base, slow, slower)
+- [x] **TOKEN-07**: z-index.css defines layered scale (base, sticky, drawer, modal, toast, tooltip)
 
 ### Styling
 
-- [x] **STYLE-01**: globals.css converts all JSON tokens into CSS custom properties matching --truf-* naming
+- [x] **STYLE-01**: globals.css imports all token CSS files and maps them to Tailwind utilities via @theme inline
 - [x] **STYLE-02**: Tailwind config maps token values so utility classes reference design tokens
 - [x] **STYLE-03**: Dark theme is default with semantic aliases (--bg, --surface, --text-primary, --accent, etc.)
 - [x] **STYLE-04**: Light theme activated via data-theme="light" attribute on root element
