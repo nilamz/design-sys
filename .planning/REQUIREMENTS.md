@@ -112,6 +112,20 @@
 - [ ] **TOAST-02**: Toast slides in from bottom with emphasized easing
 - [ ] **TOAST-03**: Toast auto-dismisses after configurable duration
 
+### PriceAlertCard
+
+- [ ] **PRICE-01**: PriceAlertCard renders fare estimate with currency and amount prominently displayed
+- [ ] **PRICE-02**: PriceAlertCard shows surge pricing indicator with multiplier badge (e.g. 1.5x) when surge is active
+- [ ] **PRICE-03**: PriceAlertCard displays fare breakdown (base fare, distance, time, surge, total) in a structured list
+- [ ] **PRICE-04**: PriceAlertCard uses Truf card styling (surface bg, border, lg radius, hover elevation)
+
+### RideMap
+
+- [ ] **MAP-01**: RideMap renders a Google Maps embed with Truf-styled container (border, radius, shadow)
+- [ ] **MAP-02**: RideMap displays pickup and dropoff markers with custom Truf-branded pins (lime accent)
+- [ ] **MAP-03**: RideMap renders route polyline between pickup and dropoff points
+- [ ] **MAP-04**: RideMap accepts lat/lng props for pickup, dropoff, and optional driver location
+
 ## v2 Requirements
 
 ### Components
@@ -143,74 +157,82 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | — | Pending |
-| INFRA-02 | — | Pending |
-| INFRA-03 | — | Pending |
-| INFRA-04 | — | Pending |
-| INFRA-05 | — | Pending |
-| INFRA-06 | — | Pending |
-| TOKEN-01 | — | Pending |
-| TOKEN-02 | — | Pending |
-| TOKEN-03 | — | Pending |
-| TOKEN-04 | — | Pending |
-| TOKEN-05 | — | Pending |
-| TOKEN-06 | — | Pending |
-| TOKEN-07 | — | Pending |
-| STYLE-01 | — | Pending |
-| STYLE-02 | — | Pending |
-| STYLE-03 | — | Pending |
-| STYLE-04 | — | Pending |
-| STYLE-05 | — | Pending |
-| BTN-01 | — | Pending |
-| BTN-02 | — | Pending |
-| BTN-03 | — | Pending |
-| BTN-04 | — | Pending |
-| BTN-05 | — | Pending |
-| BTN-06 | — | Pending |
-| BTN-07 | — | Pending |
-| INPUT-01 | — | Pending |
-| INPUT-02 | — | Pending |
-| INPUT-03 | — | Pending |
-| INPUT-04 | — | Pending |
-| CARD-01 | — | Pending |
-| CARD-02 | — | Pending |
-| BADGE-01 | — | Pending |
-| BADGE-02 | — | Pending |
-| BADGE-03 | — | Pending |
-| BADGE-04 | — | Pending |
-| BADGE-05 | — | Pending |
-| CHIP-01 | — | Pending |
-| CHIP-02 | — | Pending |
-| CHIP-03 | — | Pending |
-| ALERT-01 | — | Pending |
-| ALERT-02 | — | Pending |
-| ALERT-03 | — | Pending |
-| ALERT-04 | — | Pending |
-| ALERT-05 | — | Pending |
-| SWITCH-01 | — | Pending |
-| SWITCH-02 | — | Pending |
-| SWITCH-03 | — | Pending |
-| CHECK-01 | — | Pending |
-| CHECK-02 | — | Pending |
-| CHECK-03 | — | Pending |
-| TABS-01 | — | Pending |
-| TABS-02 | — | Pending |
-| TABS-03 | — | Pending |
-| TABS-04 | — | Pending |
-| PROG-01 | — | Pending |
-| PROG-02 | — | Pending |
-| PROG-03 | — | Pending |
-| SKEL-01 | — | Pending |
-| SKEL-02 | — | Pending |
-| TOAST-01 | — | Pending |
-| TOAST-02 | — | Pending |
-| TOAST-03 | — | Pending |
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Pending |
+| INFRA-04 | Phase 1 | Pending |
+| INFRA-05 | Phase 4 | Pending |
+| INFRA-06 | Phase 4 | Pending |
+| TOKEN-01 | Phase 1 | Pending |
+| TOKEN-02 | Phase 1 | Pending |
+| TOKEN-03 | Phase 1 | Pending |
+| TOKEN-04 | Phase 1 | Pending |
+| TOKEN-05 | Phase 1 | Pending |
+| TOKEN-06 | Phase 1 | Pending |
+| TOKEN-07 | Phase 1 | Pending |
+| STYLE-01 | Phase 1 | Pending |
+| STYLE-02 | Phase 1 | Pending |
+| STYLE-03 | Phase 1 | Pending |
+| STYLE-04 | Phase 1 | Pending |
+| STYLE-05 | Phase 1 | Pending |
+| BTN-01 | Phase 2 | Pending |
+| BTN-02 | Phase 2 | Pending |
+| BTN-03 | Phase 2 | Pending |
+| BTN-04 | Phase 2 | Pending |
+| BTN-05 | Phase 2 | Pending |
+| BTN-06 | Phase 2 | Pending |
+| BTN-07 | Phase 2 | Pending |
+| INPUT-01 | Phase 2 | Pending |
+| INPUT-02 | Phase 2 | Pending |
+| INPUT-03 | Phase 2 | Pending |
+| INPUT-04 | Phase 2 | Pending |
+| CARD-01 | Phase 2 | Pending |
+| CARD-02 | Phase 2 | Pending |
+| BADGE-01 | Phase 3 | Pending |
+| BADGE-02 | Phase 3 | Pending |
+| BADGE-03 | Phase 3 | Pending |
+| BADGE-04 | Phase 3 | Pending |
+| BADGE-05 | Phase 3 | Pending |
+| CHIP-01 | Phase 3 | Pending |
+| CHIP-02 | Phase 3 | Pending |
+| CHIP-03 | Phase 3 | Pending |
+| ALERT-01 | Phase 3 | Pending |
+| ALERT-02 | Phase 3 | Pending |
+| ALERT-03 | Phase 3 | Pending |
+| ALERT-04 | Phase 3 | Pending |
+| ALERT-05 | Phase 3 | Pending |
+| SWITCH-01 | Phase 2 | Pending |
+| SWITCH-02 | Phase 2 | Pending |
+| SWITCH-03 | Phase 2 | Pending |
+| CHECK-01 | Phase 2 | Pending |
+| CHECK-02 | Phase 2 | Pending |
+| CHECK-03 | Phase 2 | Pending |
+| TABS-01 | Phase 2 | Pending |
+| TABS-02 | Phase 2 | Pending |
+| TABS-03 | Phase 2 | Pending |
+| TABS-04 | Phase 2 | Pending |
+| PROG-01 | Phase 3 | Pending |
+| PROG-02 | Phase 3 | Pending |
+| PROG-03 | Phase 3 | Pending |
+| SKEL-01 | Phase 3 | Pending |
+| SKEL-02 | Phase 3 | Pending |
+| TOAST-01 | Phase 3 | Pending |
+| TOAST-02 | Phase 3 | Pending |
+| TOAST-03 | Phase 3 | Pending |
+| PRICE-01 | Phase 3 | Pending |
+| PRICE-02 | Phase 3 | Pending |
+| PRICE-03 | Phase 3 | Pending |
+| PRICE-04 | Phase 3 | Pending |
+| MAP-01 | Phase 3 | Pending |
+| MAP-02 | Phase 3 | Pending |
+| MAP-03 | Phase 3 | Pending |
+| MAP-04 | Phase 3 | Pending |
 
 **Coverage:**
-- v1 requirements: 55 total
-- Mapped to phases: 0
-- Unmapped: 55 ⚠️
+- v1 requirements: 70 total
+- Mapped to phases: 70
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-19*
-*Last updated: 2026-04-19 after initial definition*
+*Last updated: 2026-04-19 — phase mappings added after roadmap creation*
