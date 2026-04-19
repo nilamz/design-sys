@@ -20,20 +20,20 @@ Decimal phases appear between their surrounding integers in numeric order.
 ## Phase Details
 
 ### Phase 1: Foundation
-**Goal**: The project is runnable, every design token is defined in JSON, CSS custom properties are generated, Tailwind maps to tokens, and dark/light theming works
+**Goal**: The project is runnable, every design token is defined as CSS custom properties, Tailwind maps to tokens via @theme, and dark/light theming works
 **Depends on**: Nothing (first phase)
 **Requirements**: INFRA-01, INFRA-02, INFRA-03, INFRA-04, TOKEN-01, TOKEN-02, TOKEN-03, TOKEN-04, TOKEN-05, TOKEN-06, TOKEN-07, STYLE-01, STYLE-02, STYLE-03, STYLE-04, STYLE-05
 **Success Criteria** (what must be TRUE):
   1. Running `npm run dev` starts a Vite dev server with no errors
   2. Running `npm run storybook` opens Storybook 8 with no errors
-  3. All token JSON files exist in src/tokens/ and contain values matching the reference HTML exactly (colors, spacing, type scale, radii, shadows, motion, z-index)
+  3. All token CSS files exist in src/tokens/ and contain --truf-* values (colors, spacing, type scale, radii, shadows, motion, z-index)
   4. globals.css generates --truf-* CSS custom properties for every token, visible in browser DevTools
   5. Switching data-theme="light" on the root element changes the page appearance from dark to light (semantic aliases swap correctly)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Scaffold Vite + React 18 + TypeScript project with Storybook 8 and Tailwind CSS v4
-- [ ] 01-02: Define all design tokens as JSON files and generate CSS custom properties + Tailwind config mapping
+- [ ] 01-01-PLAN.md — Scaffold Vite + React 18 + TypeScript project with Tailwind CSS v4 and Storybook 8
+- [ ] 01-02-PLAN.md — Define all design tokens as CSS files and wire globals.css with @theme mapping and dark/light themes
 
 ### Phase 2: Core Interactive Components
 **Goal**: Button, Input (with FieldGroup), Card, Switch, Checkbox, and Tabs are all implemented with correct Truf styling, documented in Storybook, and have test files
