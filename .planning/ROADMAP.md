@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Vite + React 18 + TypeScript project with Tailwind CSS v4 and Storybook 8
+- [x] 01-01-PLAN.md — Scaffold Vite + React 18 + TypeScript project with Tailwind CSS v4 and Storybook 8
 - [ ] 01-02-PLAN.md — Define all design tokens as CSS files and wire globals.css with @theme mapping and dark/light themes
 
 ### Phase 2: Core Interactive Components
@@ -89,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 1/2 | In progress | - |
 | 2. Core Interactive Components | 0/2 | Not started | - |
 | 3. Display & Feedback Components | 0/2 | Not started | - |
 | 4. Package & Publish | 0/1 | Not started | - |

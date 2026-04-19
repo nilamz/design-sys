@@ -7,10 +7,10 @@
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: Project scaffolded with Vite + React 18 + TypeScript
-- [ ] **INFRA-02**: Tailwind CSS v4 installed and configured
-- [ ] **INFRA-03**: Storybook 8 installed and running with Vite builder
-- [ ] **INFRA-04**: Component folder structure enforced (tsx, stories, test, index per component)
+- [x] **INFRA-01**: Project scaffolded with Vite + React 18 + TypeScript
+- [x] **INFRA-02**: Tailwind CSS v4 installed and configured
+- [x] **INFRA-03**: Storybook 8 installed and running with Vite builder
+- [x] **INFRA-04**: Component folder structure enforced (tsx, stories, test, index per component)
 - [ ] **INFRA-05**: Barrel export from src/index.ts exposes all components and tokens
 - [ ] **INFRA-06**: Package.json configured for npm publishing with proper exports field
 
