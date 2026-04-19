@@ -16,21 +16,21 @@
 
 ### Tokens
 
-- [ ] **TOKEN-01**: colors.json defines forest (50-900), lime (50-900), mint (50-400), neutral (50-900), cream, and semantic colors (success, warning, error, info)
-- [ ] **TOKEN-02**: spacing.json defines 4px base unit scale (0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96)
-- [ ] **TOKEN-03**: typography.json defines three font families (sans: Inter, mono: JetBrains Mono, display: Fraunces), sizes xs-6xl, weights (300-800), and line heights
-- [ ] **TOKEN-04**: radii.json defines none, sm (8px), md (12px), lg (16px), xl (24px), pill (64px), full (9999px)
-- [ ] **TOKEN-05**: shadows.json defines xs, sm, md, lg, xl, and glow (lime-tinted)
-- [ ] **TOKEN-06**: motion.json defines easing curves (standard, emphasized, decelerated) and durations (fast, base, slow, slower)
-- [ ] **TOKEN-07**: z-index.json defines layered scale (base, sticky, drawer, modal, toast, tooltip)
+- [x] **TOKEN-01**: colors.json defines forest (50-900), lime (50-900), mint (50-400), neutral (50-900), cream, and semantic colors (success, warning, error, info)
+- [x] **TOKEN-02**: spacing.json defines 4px base unit scale (0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96)
+- [x] **TOKEN-03**: typography.json defines three font families (sans: Inter, mono: JetBrains Mono, display: Fraunces), sizes xs-6xl, weights (300-800), and line heights
+- [x] **TOKEN-04**: radii.json defines none, sm (8px), md (12px), lg (16px), xl (24px), pill (64px), full (9999px)
+- [x] **TOKEN-05**: shadows.json defines xs, sm, md, lg, xl, and glow (lime-tinted)
+- [x] **TOKEN-06**: motion.json defines easing curves (standard, emphasized, decelerated) and durations (fast, base, slow, slower)
+- [x] **TOKEN-07**: z-index.json defines layered scale (base, sticky, drawer, modal, toast, tooltip)
 
 ### Styling
 
-- [ ] **STYLE-01**: globals.css converts all JSON tokens into CSS custom properties matching --truf-* naming
-- [ ] **STYLE-02**: Tailwind config maps token values so utility classes reference design tokens
-- [ ] **STYLE-03**: Dark theme is default with semantic aliases (--bg, --surface, --text-primary, --accent, etc.)
-- [ ] **STYLE-04**: Light theme activated via data-theme="light" attribute on root element
-- [ ] **STYLE-05**: Theme CSS custom properties swap correctly between dark and light modes
+- [x] **STYLE-01**: globals.css converts all JSON tokens into CSS custom properties matching --truf-* naming
+- [x] **STYLE-02**: Tailwind config maps token values so utility classes reference design tokens
+- [x] **STYLE-03**: Dark theme is default with semantic aliases (--bg, --surface, --text-primary, --accent, etc.)
+- [x] **STYLE-04**: Light theme activated via data-theme="light" attribute on root element
+- [x] **STYLE-05**: Theme CSS custom properties swap correctly between dark and light modes
 
 ### Button
 
@@ -163,18 +163,18 @@
 | INFRA-04 | Phase 1 | Pending |
 | INFRA-05 | Phase 4 | Pending |
 | INFRA-06 | Phase 4 | Pending |
-| TOKEN-01 | Phase 1 | Pending |
-| TOKEN-02 | Phase 1 | Pending |
-| TOKEN-03 | Phase 1 | Pending |
-| TOKEN-04 | Phase 1 | Pending |
-| TOKEN-05 | Phase 1 | Pending |
-| TOKEN-06 | Phase 1 | Pending |
-| TOKEN-07 | Phase 1 | Pending |
-| STYLE-01 | Phase 1 | Pending |
-| STYLE-02 | Phase 1 | Pending |
-| STYLE-03 | Phase 1 | Pending |
-| STYLE-04 | Phase 1 | Pending |
-| STYLE-05 | Phase 1 | Pending |
+| TOKEN-01 | Phase 1 | Complete |
+| TOKEN-02 | Phase 1 | Complete |
+| TOKEN-03 | Phase 1 | Complete |
+| TOKEN-04 | Phase 1 | Complete |
+| TOKEN-05 | Phase 1 | Complete |
+| TOKEN-06 | Phase 1 | Complete |
+| TOKEN-07 | Phase 1 | Complete |
+| STYLE-01 | Phase 1 | Complete |
+| STYLE-02 | Phase 1 | Complete |
+| STYLE-03 | Phase 1 | Complete |
+| STYLE-04 | Phase 1 | Complete |
+| STYLE-05 | Phase 1 | Complete |
 | BTN-01 | Phase 2 | Pending |
 | BTN-02 | Phase 2 | Pending |
 | BTN-03 | Phase 2 | Pending |

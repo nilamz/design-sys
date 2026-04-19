@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-04-19 - Completed plan 01-01: Vite+React+TS scaffold with Tailwind v4 and Storybook 10
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-04-19 - Completed plan 01-02: CSS token architecture with --truf-* variables and Tailwind @theme mapping
 
-Progress: [█░░░░░░░░░] 13%
+Progress: [██░░░░░░░░] 25%
 
 ## Performance Metrics
 
@@ -27,7 +27,7 @@ Progress: [█░░░░░░░░░] 13%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1 | 20 min | 20 min |
+| 01-foundation | 2 | 27 min | 13.5 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
@@ -46,6 +46,9 @@ Recent decisions affecting current work:
 - 01-01: Tailwind v4 CSS-first config (no tailwind.config.js, @import "tailwindcss" + @theme blocks in CSS)
 - 01-01: Dark-first theming — Storybook defaultTheme dark, empty string = no attribute, light sets data-theme="light"
 - 01-01: Storybook 10.3.5 (latest stable) installed — same API as Storybook 8 specified in plan
+- 01-02: @theme inline required (not @theme) when mapping CSS var() references in Tailwind v4
+- 01-02: Semantic aliases use forest-900/cream/mint-300 (Truf brand palette from reference HTML), not neutral-based fallbacks
+- 01-02: Token files are primitive-only; all semantic aliases live exclusively in globals.css
 
 ### Pending Todos
 
@@ -64,5 +67,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-19
-Stopped at: Completed 01-01-PLAN.md — Phase 1 Plan 1 of 2 complete
+Stopped at: Completed 01-02-PLAN.md — Phase 1 complete (2 of 2 plans done)
 Resume file: None

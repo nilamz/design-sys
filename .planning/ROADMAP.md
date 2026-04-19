@@ -12,7 +12,7 @@ Four phases take this from zero to a published npm package. Phase 1 lays the com
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffold, all design tokens, and theme system ready
+- [x] **Phase 1: Foundation** - Project scaffold, all design tokens, and theme system ready (completed 2026-04-19)
 - [ ] **Phase 2: Core Interactive Components** - Button, Input, Card, Switch, Checkbox, and Tabs implemented and documented
 - [ ] **Phase 3: Display & Feedback Components** - Badge, Chip, Alert, Progress, Skeleton, Toast, PriceAlertCard, and RideMap implemented and documented
 - [ ] **Phase 4: Package & Publish** - Barrel export and npm publishing config complete
@@ -89,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | In progress | - |
+| 1. Foundation | 2/2 | Complete   | 2026-04-19 |
 | 2. Core Interactive Components | 0/2 | Not started | - |
 | 3. Display & Feedback Components | 0/2 | Not started | - |
 | 4. Package & Publish | 0/1 | Not started | - |
