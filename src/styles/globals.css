@@ -1,2 +1,150 @@
-/* Placeholder — full token system added in Plan 02 */
+/* ============================================================
+   TRUF DESIGN SYSTEM — GLOBAL STYLES
+   1. Tailwind v4 import (CSS-first, no directives)
+   2. Token cascade
+   3. @theme inline mapping → Tailwind utility classes
+   4. Semantic aliases: dark default (:root), light override ([data-theme="light"])
+   5. Base body styles
+   ============================================================ */
+
+/* 1. Tailwind v4 entry point */
 @import "tailwindcss";
+
+/* 2. All --truf-* custom properties */
+@import "../tokens/index.css";
+
+/* 3. Map tokens to Tailwind utilities via @theme inline
+      "inline" required because all values use var() references */
+@theme inline {
+  /* Clear Tailwind's default color palette */
+  --color-*: initial;
+
+  /* Forest green scale */
+  --color-forest-50:  var(--truf-forest-50);
+  --color-forest-100: var(--truf-forest-100);
+  --color-forest-200: var(--truf-forest-200);
+  --color-forest-300: var(--truf-forest-300);
+  --color-forest-400: var(--truf-forest-400);
+  --color-forest-500: var(--truf-forest-500);
+  --color-forest-600: var(--truf-forest-600);
+  --color-forest-700: var(--truf-forest-700);
+  --color-forest-800: var(--truf-forest-800);
+  --color-forest-900: var(--truf-forest-900);
+
+  /* Lime accent scale */
+  --color-lime-50:  var(--truf-lime-50);
+  --color-lime-100: var(--truf-lime-100);
+  --color-lime-200: var(--truf-lime-200);
+  --color-lime-300: var(--truf-lime-300);
+  --color-lime-400: var(--truf-lime-400);
+  --color-lime-500: var(--truf-lime-500);
+  --color-lime-600: var(--truf-lime-600);
+  --color-lime-700: var(--truf-lime-700);
+  --color-lime-800: var(--truf-lime-800);
+  --color-lime-900: var(--truf-lime-900);
+
+  /* Mint supporting scale */
+  --color-mint-50:  var(--truf-mint-50);
+  --color-mint-100: var(--truf-mint-100);
+  --color-mint-200: var(--truf-mint-200);
+  --color-mint-300: var(--truf-mint-300);
+  --color-mint-400: var(--truf-mint-400);
+
+  /* Neutral scale */
+  --color-neutral-50:  var(--truf-neutral-50);
+  --color-neutral-100: var(--truf-neutral-100);
+  --color-neutral-200: var(--truf-neutral-200);
+  --color-neutral-300: var(--truf-neutral-300);
+  --color-neutral-400: var(--truf-neutral-400);
+  --color-neutral-500: var(--truf-neutral-500);
+  --color-neutral-600: var(--truf-neutral-600);
+  --color-neutral-700: var(--truf-neutral-700);
+  --color-neutral-800: var(--truf-neutral-800);
+  --color-neutral-900: var(--truf-neutral-900);
+
+  /* Cream */
+  --color-cream:   var(--truf-cream);
+  --color-cream-2: var(--truf-cream-2);
+
+  /* Semantic status colors */
+  --color-success: var(--truf-success);
+  --color-warning: var(--truf-warning);
+  --color-error:   var(--truf-error);
+  --color-info:    var(--truf-info);
+
+  /* Font families */
+  --font-sans:    var(--truf-font-sans);
+  --font-mono:    var(--truf-font-mono);
+  --font-display: var(--truf-font-display);
+
+  /* Border radii */
+  --radius-none: var(--truf-radius-none);
+  --radius-sm:   var(--truf-radius-sm);
+  --radius-md:   var(--truf-radius-md);
+  --radius-lg:   var(--truf-radius-lg);
+  --radius-xl:   var(--truf-radius-xl);
+  --radius-pill: var(--truf-radius-pill);
+  --radius-full: var(--truf-radius-full);
+
+  /* Shadows */
+  --shadow-xs:   var(--truf-shadow-xs);
+  --shadow-sm:   var(--truf-shadow-sm);
+  --shadow-md:   var(--truf-shadow-md);
+  --shadow-lg:   var(--truf-shadow-lg);
+  --shadow-xl:   var(--truf-shadow-xl);
+  --shadow-glow: var(--truf-shadow-glow);
+
+  /* Spacing (Tailwind spacing namespace) */
+  --spacing-0:  var(--truf-space-0);
+  --spacing-1:  var(--truf-space-1);
+  --spacing-2:  var(--truf-space-2);
+  --spacing-3:  var(--truf-space-3);
+  --spacing-4:  var(--truf-space-4);
+  --spacing-5:  var(--truf-space-5);
+  --spacing-6:  var(--truf-space-6);
+  --spacing-8:  var(--truf-space-8);
+  --spacing-10: var(--truf-space-10);
+  --spacing-12: var(--truf-space-12);
+  --spacing-16: var(--truf-space-16);
+  --spacing-20: var(--truf-space-20);
+  --spacing-24: var(--truf-space-24);
+}
+
+/* 4. Dark theme semantic aliases (dark is default — matches Truf brand) */
+:root {
+  --bg:             var(--truf-forest-900);
+  --bg-elevated:    var(--truf-forest-800);
+  --surface:        var(--truf-forest-800);
+  --surface-2:      var(--truf-forest-700);
+  --border:         rgba(143, 238, 170, 0.12);
+  --border-strong:  rgba(143, 238, 170, 0.22);
+  --text-primary:   var(--truf-cream);
+  --text-secondary: var(--truf-mint-300);
+  --text-muted:     #7A8F82;
+  --accent:         var(--truf-lime-500);
+  --accent-hover:   var(--truf-lime-400);
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+  --bg:             var(--truf-cream);
+  --bg-elevated:    #FFFFFF;
+  --surface:        #FFFFFF;
+  --surface-2:      var(--truf-cream-2);
+  --border:         rgba(11, 46, 36, 0.10);
+  --border-strong:  rgba(11, 46, 36, 0.20);
+  --text-primary:   var(--truf-forest-900);
+  --text-secondary: var(--truf-forest-600);
+  --text-muted:     var(--truf-neutral-500);
+  --accent:         var(--truf-forest-800);
+  --accent-hover:   var(--truf-forest-700);
+}
+
+/* 5. Base body styles */
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--truf-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
