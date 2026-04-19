@@ -1,0 +1,12 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — SHADOWS
+   Elevation scale plus lime-tinted glow.
+   ============================================================ */
+:root {
+  --truf-shadow-xs:   0 1px 2px rgba(0,0,0,0.20);
+  --truf-shadow-sm:   0 2px 6px rgba(0,0,0,0.25);
+  --truf-shadow-md:   0 6px 16px rgba(0,0,0,0.30);
+  --truf-shadow-lg:   0 14px 34px rgba(0,0,0,0.38);
+  --truf-shadow-xl:   0 28px 60px rgba(0,0,0,0.45);
+  --truf-shadow-glow: 0 0 0 1px rgba(45,214,83,0.25), 0 12px 32px rgba(45,214,83,0.20);
+}

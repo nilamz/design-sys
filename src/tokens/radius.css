@@ -1,0 +1,13 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — BORDER RADIUS
+   From none to pill/full.
+   ============================================================ */
+:root {
+  --truf-radius-none: 0px;
+  --truf-radius-sm:   8px;
+  --truf-radius-md:   12px;
+  --truf-radius-lg:   16px;
+  --truf-radius-xl:   24px;
+  --truf-radius-pill: 64px;
+  --truf-radius-full: 9999px;
+}

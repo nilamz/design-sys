@@ -1,0 +1,56 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — COLORS
+   Primitive color scales. No semantic aliases here.
+   ============================================================ */
+:root {
+  /* Brand — Primary (Deep Forest Green) */
+  --truf-forest-50:  #E8F0EC;
+  --truf-forest-100: #C4DCC9;
+  --truf-forest-200: #97C0A3;
+  --truf-forest-300: #6AA47C;
+  --truf-forest-400: #3E8B5F;
+  --truf-forest-500: #1E7A5E;
+  --truf-forest-600: #135C46;
+  --truf-forest-700: #0E4535;
+  --truf-forest-800: #0B2E24;
+  --truf-forest-900: #061A13;
+
+  /* Brand — Accent (Vibrant Lime Green) */
+  --truf-lime-50:  #E9FCEF;
+  --truf-lime-100: #C6F6D0;
+  --truf-lime-200: #8FEEAA;
+  --truf-lime-300: #5DE382;
+  --truf-lime-400: #34E06A;
+  --truf-lime-500: #2DD653;
+  --truf-lime-600: #22B040;
+  --truf-lime-700: #188831;
+  --truf-lime-800: #105F23;
+  --truf-lime-900: #0A3A16;
+
+  /* Brand — Supporting (Soft Mint) */
+  --truf-mint-50:  #F1FAF5;
+  --truf-mint-100: #D6F0E0;
+  --truf-mint-200: #B5E8D4;
+  --truf-mint-300: #9FE5C9;
+  --truf-mint-400: #7FD0AF;
+
+  /* Neutrals */
+  --truf-cream:         #F5F1E8;
+  --truf-cream-2:       #EFEBE0;
+  --truf-neutral-50:    #FAFAF7;
+  --truf-neutral-100:   #F2F2ED;
+  --truf-neutral-200:   #E4E4DB;
+  --truf-neutral-300:   #CBCBC0;
+  --truf-neutral-400:   #9A9A8E;
+  --truf-neutral-500:   #70706A;
+  --truf-neutral-600:   #4F4F4A;
+  --truf-neutral-700:   #2E2E2B;
+  --truf-neutral-800:   #1A1A17;
+  --truf-neutral-900:   #0A0A08;
+
+  /* Semantic status colors */
+  --truf-success: #22B040;
+  --truf-warning: #E6A817;
+  --truf-error:   #DC4B3F;
+  --truf-info:    #2B7DD6;
+}

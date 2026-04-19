@@ -1,0 +1,16 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — MOTION
+   Easing curves and duration tokens.
+   ============================================================ */
+:root {
+  /* Easing curves */
+  --truf-ease-standard:    cubic-bezier(0.4, 0.0, 0.2, 1);
+  --truf-ease-emphasized:  cubic-bezier(0.2, 0.0, 0, 1);
+  --truf-ease-decelerated: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+  /* Durations */
+  --truf-duration-fast:   150ms;
+  --truf-duration-base:   220ms;
+  --truf-duration-slow:   320ms;
+  --truf-duration-slower: 480ms;
+}

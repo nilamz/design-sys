@@ -1,0 +1,35 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — TYPOGRAPHY
+   Font families, size scale, weights, and line heights.
+   ============================================================ */
+:root {
+  /* Font families */
+  --truf-font-sans:    'Inter', system-ui, sans-serif;
+  --truf-font-mono:    'JetBrains Mono', 'Menlo', monospace;
+  --truf-font-display: 'Fraunces', 'Times New Roman', serif;
+
+  /* Type scale */
+  --truf-text-xs:   0.75rem;    /* 12px */
+  --truf-text-sm:   0.875rem;   /* 14px */
+  --truf-text-base: 1rem;       /* 16px */
+  --truf-text-lg:   1.125rem;   /* 18px */
+  --truf-text-xl:   1.25rem;    /* 20px */
+  --truf-text-2xl:  1.5rem;     /* 24px */
+  --truf-text-3xl:  1.875rem;   /* 30px */
+  --truf-text-4xl:  2.25rem;    /* 36px */
+  --truf-text-5xl:  3rem;       /* 48px */
+  --truf-text-6xl:  3.75rem;    /* 60px */
+
+  /* Font weights */
+  --truf-weight-300: 300;
+  --truf-weight-400: 400;
+  --truf-weight-500: 500;
+  --truf-weight-600: 600;
+  --truf-weight-700: 700;
+  --truf-weight-800: 800;
+
+  /* Line heights */
+  --truf-leading-tight:   1.25;
+  --truf-leading-normal:  1.5;
+  --truf-leading-relaxed: 1.75;
+}

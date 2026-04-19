@@ -1,0 +1,12 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — AGGREGATOR
+   Single import that cascades all token files.
+   Import order: colors first (others may reference them).
+   ============================================================ */
+@import "./colors.css";
+@import "./typography.css";
+@import "./spacing.css";
+@import "./shadows.css";
+@import "./radius.css";
+@import "./motion.css";
+@import "./z-index.css";

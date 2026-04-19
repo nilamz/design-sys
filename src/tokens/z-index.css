@@ -1,0 +1,12 @@
+/* ============================================================
+   TRUF DESIGN TOKENS — Z-INDEX
+   Layered stacking scale.
+   ============================================================ */
+:root {
+  --truf-z-base:    1;
+  --truf-z-sticky:  100;
+  --truf-z-drawer:  200;
+  --truf-z-modal:   400;
+  --truf-z-toast:   600;
+  --truf-z-tooltip: 800;
+}
