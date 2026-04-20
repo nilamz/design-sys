@@ -1,7 +1,5 @@
 // Truf Design System — barrel export
-// All 16 components and their public types
-// CSS is extracted to dist/styles.css and exposed via package.json exports './styles'
-import './styles/globals.css';
+// CSS: consumers import '@truf/design-system/styles' separately
 
 export { Alert } from './components/Alert';
 export { Badge } from './components/Badge';
