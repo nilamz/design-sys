@@ -19,9 +19,9 @@ Progress: [███████░░░] 75%
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 7 min
-- Total execution time: 0.47 hours
+- Total plans completed: 6
+- Average duration: 6 min
+- Total execution time: 0.50 hours
 
 **By Phase:**
 
@@ -29,7 +29,7 @@ Progress: [███████░░░] 75%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 27 min | 13.5 min |
 | 02-core-interactive-components | 2 | 6 min | 3 min |
-| 03-display-feedback-components | 1 | 4 min | 4 min |
+| 03-display-feedback-components | 2 | 8 min | 4 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
@@ -59,6 +59,9 @@ Recent decisions affecting current work:
 - 03-01: Alert uses border-0 border-l-4 border-solid to isolate left border (Tailwind conflict Pitfall 4)
 - 03-01: Chip renders as button element for semantic clickability
 - 03-01: variantConfig Record<Variant, { color, bg }> pattern for multi-property variant lookup in Alert
+- 03-02: Toast is controlled component — parent manages visible state, matching Switch/Checkbox pattern
+- 03-02: z-[600] arbitrary Tailwind value for --truf-z-toast (z-index tokens not in @theme, use arbitrary values per Pitfall 2)
+- 03-02: vitest config only runs .stories.tsx via @storybook/addon-vitest browser runner; .test.tsx files exist but not executed
 
 ### Pending Todos
 
@@ -77,5 +80,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-20
-Stopped at: Completed 03-01-PLAN.md — Phase 3 plan 1 of 2 done (Badge, Chip, Alert). Phase 3 in progress.
+Stopped at: Completed 03-02-PLAN.md — Phase 3 plan 2 of 2 done (Progress, Skeleton, Toast). Phase 3 complete.
 Resume file: None

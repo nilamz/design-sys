@@ -97,20 +97,20 @@
 
 ### Progress
 
-- [ ] **PROG-01**: Progress renders track (surface bg, 4px height)
-- [ ] **PROG-02**: Progress renders fill bar (lime bg, animated width transition)
-- [ ] **PROG-03**: Progress accepts value prop (0-100)
+- [x] **PROG-01**: Progress renders track (surface bg, 4px height)
+- [x] **PROG-02**: Progress renders fill bar (lime bg, animated width transition)
+- [x] **PROG-03**: Progress accepts value prop (0-100)
 
 ### Skeleton
 
-- [ ] **SKEL-01**: Skeleton renders shimmer animation (gradient sweep)
-- [ ] **SKEL-02**: Skeleton supports configurable width/height via className or props
+- [x] **SKEL-01**: Skeleton renders shimmer animation (gradient sweep)
+- [x] **SKEL-02**: Skeleton supports configurable width/height via className or props
 
 ### Toast
 
-- [ ] **TOAST-01**: Toast renders with lime bg, forest text, pill radius
-- [ ] **TOAST-02**: Toast slides in from bottom with emphasized easing
-- [ ] **TOAST-03**: Toast auto-dismisses after configurable duration
+- [x] **TOAST-01**: Toast renders with lime bg, forest text, pill radius
+- [x] **TOAST-02**: Toast slides in from bottom with emphasized easing
+- [x] **TOAST-03**: Toast auto-dismisses after configurable duration
 
 ### PriceAlertCard
 
@@ -211,14 +211,14 @@
 | TABS-02 | Phase 2 | Complete |
 | TABS-03 | Phase 2 | Complete |
 | TABS-04 | Phase 2 | Complete |
-| PROG-01 | Phase 3 | Pending |
-| PROG-02 | Phase 3 | Pending |
-| PROG-03 | Phase 3 | Pending |
-| SKEL-01 | Phase 3 | Pending |
-| SKEL-02 | Phase 3 | Pending |
-| TOAST-01 | Phase 3 | Pending |
-| TOAST-02 | Phase 3 | Pending |
-| TOAST-03 | Phase 3 | Pending |
+| PROG-01 | Phase 3 | Complete |
+| PROG-02 | Phase 3 | Complete |
+| PROG-03 | Phase 3 | Complete |
+| SKEL-01 | Phase 3 | Complete |
+| SKEL-02 | Phase 3 | Complete |
+| TOAST-01 | Phase 3 | Complete |
+| TOAST-02 | Phase 3 | Complete |
+| TOAST-03 | Phase 3 | Complete |
 | PRICE-01 | Phase 3 | Pending |
 | PRICE-02 | Phase 3 | Pending |
 | PRICE-03 | Phase 3 | Pending |
