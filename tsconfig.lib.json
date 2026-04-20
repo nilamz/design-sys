@@ -5,11 +5,13 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
+    "rootDir": "src",
     "declaration": true,
     "declarationDir": "dist",
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
-    "erasableSyntaxOnly": true
+    "erasableSyntaxOnly": true,
+    "allowArbitraryExtensions": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx", "src/App.tsx", "src/main.tsx"]
