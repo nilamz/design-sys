@@ -78,22 +78,22 @@
 
 ### Switch
 
-- [ ] **SWITCH-01**: Switch renders unchecked state (surface bg, primary knob)
-- [ ] **SWITCH-02**: Switch renders checked state (lime bg, forest knob, translateX transition)
-- [ ] **SWITCH-03**: Switch is accessible with proper input element
+- [x] **SWITCH-01**: Switch renders unchecked state (surface bg, primary knob)
+- [x] **SWITCH-02**: Switch renders checked state (lime bg, forest knob, translateX transition)
+- [x] **SWITCH-03**: Switch is accessible with proper input element
 
 ### Checkbox
 
-- [ ] **CHECK-01**: Checkbox renders unchecked state (border, transparent bg)
-- [ ] **CHECK-02**: Checkbox renders checked state (lime bg, checkmark via CSS)
-- [ ] **CHECK-03**: Checkbox is accessible with proper input element
+- [x] **CHECK-01**: Checkbox renders unchecked state (border, transparent bg)
+- [x] **CHECK-02**: Checkbox renders checked state (lime bg, checkmark via CSS)
+- [x] **CHECK-03**: Checkbox is accessible with proper input element
 
 ### Tabs
 
-- [ ] **TABS-01**: Tabs render with bottom border separator
-- [ ] **TABS-02**: Active tab shows lime text and lime bottom border indicator
-- [ ] **TABS-03**: Tab hover shows primary text color
-- [ ] **TABS-04**: Tabs support controlled active state
+- [x] **TABS-01**: Tabs render with bottom border separator
+- [x] **TABS-02**: Active tab shows lime text and lime bottom border indicator
+- [x] **TABS-03**: Tab hover shows primary text color
+- [x] **TABS-04**: Tabs support controlled active state
 
 ### Progress
 
@@ -201,16 +201,16 @@
 | ALERT-03 | Phase 3 | Pending |
 | ALERT-04 | Phase 3 | Pending |
 | ALERT-05 | Phase 3 | Pending |
-| SWITCH-01 | Phase 2 | Pending |
-| SWITCH-02 | Phase 2 | Pending |
-| SWITCH-03 | Phase 2 | Pending |
-| CHECK-01 | Phase 2 | Pending |
-| CHECK-02 | Phase 2 | Pending |
-| CHECK-03 | Phase 2 | Pending |
-| TABS-01 | Phase 2 | Pending |
-| TABS-02 | Phase 2 | Pending |
-| TABS-03 | Phase 2 | Pending |
-| TABS-04 | Phase 2 | Pending |
+| SWITCH-01 | Phase 2 | Complete |
+| SWITCH-02 | Phase 2 | Complete |
+| SWITCH-03 | Phase 2 | Complete |
+| CHECK-01 | Phase 2 | Complete |
+| CHECK-02 | Phase 2 | Complete |
+| CHECK-03 | Phase 2 | Complete |
+| TABS-01 | Phase 2 | Complete |
+| TABS-02 | Phase 2 | Complete |
+| TABS-03 | Phase 2 | Complete |
+| TABS-04 | Phase 2 | Complete |
 | PROG-01 | Phase 3 | Pending |
 | PROG-02 | Phase 3 | Pending |
 | PROG-03 | Phase 3 | Pending |

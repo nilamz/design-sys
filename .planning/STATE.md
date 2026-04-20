@@ -10,25 +10,25 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 ## Current Position
 
 Phase: 2 of 4 (Core Interactive Components)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-04-20 - Completed plan 02-01: Button, Input, FieldGroup, Card components with Storybook stories and Vitest tests
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-04-20 - Completed plan 02-02: Switch, Checkbox, Tabs components with Storybook stories and Vitest tests
 
-Progress: [███░░░░░░░] 37%
+Progress: [████░░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 10 min
-- Total execution time: 0.40 hours
+- Total plans completed: 4
+- Average duration: 8 min
+- Total execution time: 0.43 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 27 min | 13.5 min |
-| 02-core-interactive-components | 1 | 4 min | 4 min |
+| 02-core-interactive-components | 2 | 6 min | 3 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
@@ -52,6 +52,9 @@ Recent decisions affecting current work:
 - 01-02: Token files are primitive-only; all semantic aliases live exclusively in globals.css
 - 02-01: Test files use React createRoot + DOM assertions — @testing-library/react not installed; avoids new dependency
 - 02-01: components.css added as separate file imported in globals.css — cleaner than bloating globals.css with component pseudo-element CSS
+- 02-02: Switch outer label holds switch-checked class so CSS descendant selectors fire correctly
+- 02-02: Tabs active indicator uses mb-[-1px] + border-b-2 to overlap container border — critical -1px overlap pattern
+- 02-02: Storybook stories use render + useState for controlled components (Switch/Checkbox/Tabs)
 
 ### Pending Todos
 
@@ -70,5 +73,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-20
-Stopped at: Completed 02-01-PLAN.md — Phase 2 plan 1 of 2 done (Button, Input, FieldGroup, Card)
+Stopped at: Completed 02-02-PLAN.md — Phase 2 plan 2 of 2 done (Switch, Checkbox, Tabs). Phase 2 complete.
 Resume file: None
