@@ -86,7 +86,7 @@ Each task was committed atomically:
 1. **Task 1: Add pseudo-element CSS and create Switch, Checkbox, Tabs components** - `490369f` (feat)
 2. **Task 2: Create Storybook stories and test files** - `cbebe8d` (feat)
 
-**Plan metadata:** _(docs commit — see final_commit)_
+**Plan metadata:** `cb6848c` (docs: complete plan)
 
 ## Files Created/Modified
 
