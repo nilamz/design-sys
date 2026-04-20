@@ -77,10 +77,10 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. src/index.ts exports every component and token, and a consuming project can import directly from the package name
   2. Running `npm run build` produces a dist/ output and package.json exports field resolves correctly for ESM and CJS consumers
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: Wire barrel export and configure package.json for npm publishing
+- [ ] 04-01-PLAN.md — Wire barrel export, Vite library build, and package.json npm publishing config
 
 ## Progress
 
