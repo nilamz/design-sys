@@ -13,7 +13,7 @@ Four phases take this from zero to a published npm package. Phase 1 lays the com
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffold, all design tokens, and theme system ready (completed 2026-04-19)
-- [ ] **Phase 2: Core Interactive Components** - Button, Input, Card, Switch, Checkbox, and Tabs implemented and documented
+- [ ] **Phase 2: Core Interactive Components** - Button, Input, Card, Switch, Checkbox, and Tabs implemented and documented (1/2 plans complete)
 - [ ] **Phase 3: Display & Feedback Components** - Badge, Chip, Alert, Progress, Skeleton, Toast, PriceAlertCard, and RideMap implemented and documented
 - [ ] **Phase 4: Package & Publish** - Barrel export and npm publishing config complete
 
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Vite + React 18 + TypeScript project with Tailwind CSS v4 and Storybook 8
-- [ ] 01-02-PLAN.md — Define all design tokens as CSS files and wire globals.css with @theme mapping and dark/light themes
+- [x] 01-02-PLAN.md — Define all design tokens as CSS files and wire globals.css with @theme mapping and dark/light themes
 
 ### Phase 2: Core Interactive Components
 **Goal**: Button, Input (with FieldGroup), Card, Switch, Checkbox, and Tabs are all implemented with correct Truf styling, documented in Storybook, and have test files
@@ -48,7 +48,7 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 02-01: Implement Button, Input, FieldGroup, and Card components with stories and test files
+- [x] 02-01: Implement Button, Input, FieldGroup, and Card components with stories and test files (completed 2026-04-20)
 - [ ] 02-02: Implement Switch, Checkbox, and Tabs components with stories and test files
 
 ### Phase 3: Display & Feedback Components
@@ -90,6 +90,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-04-19 |
-| 2. Core Interactive Components | 0/2 | Not started | - |
+| 2. Core Interactive Components | 1/2 | In progress | - |
 | 3. Display & Feedback Components | 0/2 | Not started | - |
 | 4. Package & Publish | 0/1 | Not started | - |

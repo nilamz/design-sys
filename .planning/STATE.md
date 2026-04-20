@@ -5,29 +5,30 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Every component and token faithfully reproduces the Truf brand language — consistent, accessible, and ready to drop into any Truf product.
-**Current focus:** Phase 1 - Foundation
+**Current focus:** Phase 2 - Core Interactive Components
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-04-19 - Completed plan 01-02: CSS token architecture with --truf-* variables and Tailwind @theme mapping
+Phase: 2 of 4 (Core Interactive Components)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-04-20 - Completed plan 02-01: Button, Input, FieldGroup, Card components with Storybook stories and Vitest tests
 
-Progress: [██░░░░░░░░] 25%
+Progress: [███░░░░░░░] 37%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 20 min
-- Total execution time: 0.33 hours
+- Total plans completed: 3
+- Average duration: 10 min
+- Total execution time: 0.40 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 27 min | 13.5 min |
+| 02-core-interactive-components | 1 | 4 min | 4 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
@@ -49,6 +50,8 @@ Recent decisions affecting current work:
 - 01-02: @theme inline required (not @theme) when mapping CSS var() references in Tailwind v4
 - 01-02: Semantic aliases use forest-900/cream/mint-300 (Truf brand palette from reference HTML), not neutral-based fallbacks
 - 01-02: Token files are primitive-only; all semantic aliases live exclusively in globals.css
+- 02-01: Test files use React createRoot + DOM assertions — @testing-library/react not installed; avoids new dependency
+- 02-01: components.css added as separate file imported in globals.css — cleaner than bloating globals.css with component pseudo-element CSS
 
 ### Pending Todos
 
@@ -66,6 +69,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-19
-Stopped at: Completed 01-02-PLAN.md — Phase 1 complete (2 of 2 plans done)
+Last session: 2026-04-20
+Stopped at: Completed 02-01-PLAN.md — Phase 2 plan 1 of 2 done (Button, Input, FieldGroup, Card)
 Resume file: None

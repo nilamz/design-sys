@@ -34,25 +34,25 @@
 
 ### Button
 
-- [ ] **BTN-01**: Button renders contained variant (lime bg, forest text)
-- [ ] **BTN-02**: Button renders outlined variant (transparent bg, border, hover accent)
-- [ ] **BTN-03**: Button renders text variant (no bg, accent text, hover bg tint)
-- [ ] **BTN-04**: Button supports sm, md (default), lg sizes
-- [ ] **BTN-05**: Button supports disabled state with reduced opacity and no pointer events
-- [ ] **BTN-06**: Button has pill border-radius (64px) matching reference
-- [ ] **BTN-07**: Button has focus-visible outline (2px lime, 2px offset)
+- [x] **BTN-01**: Button renders contained variant (lime bg, forest text)
+- [x] **BTN-02**: Button renders outlined variant (transparent bg, border, hover accent)
+- [x] **BTN-03**: Button renders text variant (no bg, accent text, hover bg tint)
+- [x] **BTN-04**: Button supports sm, md (default), lg sizes
+- [x] **BTN-05**: Button supports disabled state with reduced opacity and no pointer events
+- [x] **BTN-06**: Button has pill border-radius (64px) matching reference
+- [x] **BTN-07**: Button has focus-visible outline (2px lime, 2px offset)
 
 ### Input
 
-- [ ] **INPUT-01**: Input renders with correct styling (bg-elevated, border, focus ring)
-- [ ] **INPUT-02**: Input supports placeholder text styled with muted color
-- [ ] **INPUT-03**: Input focus shows lime border + 3px lime glow ring
-- [ ] **INPUT-04**: FieldGroup component wraps Input with label and help text
+- [x] **INPUT-01**: Input renders with correct styling (bg-elevated, border, focus ring)
+- [x] **INPUT-02**: Input supports placeholder text styled with muted color
+- [x] **INPUT-03**: Input focus shows lime border + 3px lime glow ring
+- [x] **INPUT-04**: FieldGroup component wraps Input with label and help text
 
 ### Card
 
-- [ ] **CARD-01**: Card renders with surface bg, border, and lg border-radius
-- [ ] **CARD-02**: Card hover shows lime border accent, translateY(-2px), and md shadow
+- [x] **CARD-01**: Card renders with surface bg, border, and lg border-radius
+- [x] **CARD-02**: Card hover shows lime border accent, translateY(-2px), and md shadow
 
 ### Badge
 
@@ -175,19 +175,19 @@
 | STYLE-03 | Phase 1 | Complete |
 | STYLE-04 | Phase 1 | Complete |
 | STYLE-05 | Phase 1 | Complete |
-| BTN-01 | Phase 2 | Pending |
-| BTN-02 | Phase 2 | Pending |
-| BTN-03 | Phase 2 | Pending |
-| BTN-04 | Phase 2 | Pending |
-| BTN-05 | Phase 2 | Pending |
-| BTN-06 | Phase 2 | Pending |
-| BTN-07 | Phase 2 | Pending |
-| INPUT-01 | Phase 2 | Pending |
-| INPUT-02 | Phase 2 | Pending |
-| INPUT-03 | Phase 2 | Pending |
-| INPUT-04 | Phase 2 | Pending |
-| CARD-01 | Phase 2 | Pending |
-| CARD-02 | Phase 2 | Pending |
+| BTN-01 | Phase 2 | Complete |
+| BTN-02 | Phase 2 | Complete |
+| BTN-03 | Phase 2 | Complete |
+| BTN-04 | Phase 2 | Complete |
+| BTN-05 | Phase 2 | Complete |
+| BTN-06 | Phase 2 | Complete |
+| BTN-07 | Phase 2 | Complete |
+| INPUT-01 | Phase 2 | Complete |
+| INPUT-02 | Phase 2 | Complete |
+| INPUT-03 | Phase 2 | Complete |
+| INPUT-04 | Phase 2 | Complete |
+| CARD-01 | Phase 2 | Complete |
+| CARD-02 | Phase 2 | Complete |
 | BADGE-01 | Phase 3 | Pending |
 | BADGE-02 | Phase 3 | Pending |
 | BADGE-03 | Phase 3 | Pending |
