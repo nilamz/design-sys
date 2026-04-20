@@ -63,12 +63,12 @@ Plans:
   5. Toast slides in from bottom with emphasized easing, renders with lime bg, and auto-dismisses after a configurable duration
   6. PriceAlertCard displays fare estimate, surge multiplier badge, and fare breakdown list with Truf card styling
   7. RideMap renders Google Maps with Truf-styled container, custom lime-accent pins for pickup/dropoff, and route polyline
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Implement Badge, Chip, and Alert components with stories and test files
-- [ ] 03-02: Implement Progress, Skeleton, and Toast components with stories and test files
-- [ ] 03-03: Implement PriceAlertCard and RideMap components with stories and test files
+- [ ] 03-01-PLAN.md — Implement Badge, Chip, and Alert components with stories and test files
+- [ ] 03-02-PLAN.md — Implement Progress, Skeleton, and Toast components with CSS keyframe animations
+- [ ] 03-03-PLAN.md — Implement PriceAlertCard and RideMap composite components
 
 ### Phase 4: Package & Publish
 **Goal**: The library has a single barrel export and is fully configured for npm publishing so any Truf product can install and use it
@@ -91,5 +91,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-04-19 |
 | 2. Core Interactive Components | 2/2 | Complete   | 2026-04-20 |
-| 3. Display & Feedback Components | 0/2 | Not started | - |
+| 3. Display & Feedback Components | 2/3 | In Progress|  |
 | 4. Package & Publish | 0/1 | Not started | - |

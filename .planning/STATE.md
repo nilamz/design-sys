@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Every component and token faithfully reproduces the Truf brand language — consistent, accessible, and ready to drop into any Truf product.
-**Current focus:** Phase 2 - Core Interactive Components
+**Current focus:** Phase 3 - Display & Feedback Components
 
 ## Current Position
 
-Phase: 2 of 4 (Core Interactive Components)
+Phase: 3 of 4 (Display & Feedback Components)
 Plan: 2 of 2 in current phase
 Status: Phase complete
-Last activity: 2026-04-20 - Completed plan 02-02: Switch, Checkbox, Tabs components with Storybook stories and Vitest tests
+Last activity: 2026-04-20 - Completed plan 03-02: Progress, Skeleton, and Toast components with CSS @keyframes animations and auto-dismiss timer
 
-Progress: [████░░░░░░] 50%
+Progress: [███████░░░] 75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 8 min
-- Total execution time: 0.43 hours
+- Total plans completed: 5
+- Average duration: 7 min
+- Total execution time: 0.47 hours
 
 **By Phase:**
 
@@ -29,6 +29,7 @@ Progress: [████░░░░░░] 50%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 27 min | 13.5 min |
 | 02-core-interactive-components | 2 | 6 min | 3 min |
+| 03-display-feedback-components | 1 | 4 min | 4 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
@@ -55,6 +56,9 @@ Recent decisions affecting current work:
 - 02-02: Switch outer label holds switch-checked class so CSS descendant selectors fire correctly
 - 02-02: Tabs active indicator uses mb-[-1px] + border-b-2 to overlap container border — critical -1px overlap pattern
 - 02-02: Storybook stories use render + useState for controlled components (Switch/Checkbox/Tabs)
+- 03-01: Alert uses border-0 border-l-4 border-solid to isolate left border (Tailwind conflict Pitfall 4)
+- 03-01: Chip renders as button element for semantic clickability
+- 03-01: variantConfig Record<Variant, { color, bg }> pattern for multi-property variant lookup in Alert
 
 ### Pending Todos
 
@@ -73,5 +77,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-20
-Stopped at: Completed 02-02-PLAN.md — Phase 2 plan 2 of 2 done (Switch, Checkbox, Tabs). Phase 2 complete.
+Stopped at: Completed 03-01-PLAN.md — Phase 3 plan 1 of 2 done (Badge, Chip, Alert). Phase 3 in progress.
 Resume file: None

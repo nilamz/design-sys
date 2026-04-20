@@ -56,25 +56,25 @@
 
 ### Badge
 
-- [ ] **BADGE-01**: Badge renders lime variant (lime bg, forest text)
-- [ ] **BADGE-02**: Badge renders forest variant (forest-600 bg, cream text)
-- [ ] **BADGE-03**: Badge renders mint variant (mint-200 bg, forest text)
-- [ ] **BADGE-04**: Badge renders outline variant (transparent bg, border)
-- [ ] **BADGE-05**: Badge uses pill border-radius and mono font
+- [x] **BADGE-01**: Badge renders lime variant (lime bg, forest text)
+- [x] **BADGE-02**: Badge renders forest variant (forest-600 bg, cream text)
+- [x] **BADGE-03**: Badge renders mint variant (mint-200 bg, forest text)
+- [x] **BADGE-04**: Badge renders outline variant (transparent bg, border)
+- [x] **BADGE-05**: Badge uses pill border-radius and mono font
 
 ### Chip
 
-- [ ] **CHIP-01**: Chip renders active state (lime bg, forest text)
-- [ ] **CHIP-02**: Chip renders inactive state (mint bg, forest text)
-- [ ] **CHIP-03**: Chip has pill border-radius and clickable cursor
+- [x] **CHIP-01**: Chip renders active state (lime bg, forest text)
+- [x] **CHIP-02**: Chip renders inactive state (mint bg, forest text)
+- [x] **CHIP-03**: Chip has pill border-radius and clickable cursor
 
 ### Alert
 
-- [ ] **ALERT-01**: Alert renders success variant (green left border, green-tinted bg)
-- [ ] **ALERT-02**: Alert renders warning variant (yellow left border, yellow-tinted bg)
-- [ ] **ALERT-03**: Alert renders error variant (red left border, red-tinted bg)
-- [ ] **ALERT-04**: Alert renders info variant (blue left border, blue-tinted bg)
-- [ ] **ALERT-05**: Alert supports title (strong) and description content
+- [x] **ALERT-01**: Alert renders success variant (green left border, green-tinted bg)
+- [x] **ALERT-02**: Alert renders warning variant (yellow left border, yellow-tinted bg)
+- [x] **ALERT-03**: Alert renders error variant (red left border, red-tinted bg)
+- [x] **ALERT-04**: Alert renders info variant (blue left border, blue-tinted bg)
+- [x] **ALERT-05**: Alert supports title (strong) and description content
 
 ### Switch
 
@@ -188,19 +188,19 @@
 | INPUT-04 | Phase 2 | Complete |
 | CARD-01 | Phase 2 | Complete |
 | CARD-02 | Phase 2 | Complete |
-| BADGE-01 | Phase 3 | Pending |
-| BADGE-02 | Phase 3 | Pending |
-| BADGE-03 | Phase 3 | Pending |
-| BADGE-04 | Phase 3 | Pending |
-| BADGE-05 | Phase 3 | Pending |
-| CHIP-01 | Phase 3 | Pending |
-| CHIP-02 | Phase 3 | Pending |
-| CHIP-03 | Phase 3 | Pending |
-| ALERT-01 | Phase 3 | Pending |
-| ALERT-02 | Phase 3 | Pending |
-| ALERT-03 | Phase 3 | Pending |
-| ALERT-04 | Phase 3 | Pending |
-| ALERT-05 | Phase 3 | Pending |
+| BADGE-01 | Phase 3 | Complete |
+| BADGE-02 | Phase 3 | Complete |
+| BADGE-03 | Phase 3 | Complete |
+| BADGE-04 | Phase 3 | Complete |
+| BADGE-05 | Phase 3 | Complete |
+| CHIP-01 | Phase 3 | Complete |
+| CHIP-02 | Phase 3 | Complete |
+| CHIP-03 | Phase 3 | Complete |
+| ALERT-01 | Phase 3 | Complete |
+| ALERT-02 | Phase 3 | Complete |
+| ALERT-03 | Phase 3 | Complete |
+| ALERT-04 | Phase 3 | Complete |
+| ALERT-05 | Phase 3 | Complete |
 | SWITCH-01 | Phase 2 | Complete |
 | SWITCH-02 | Phase 2 | Complete |
 | SWITCH-03 | Phase 2 | Complete |
