@@ -51,9 +51,12 @@
 /* ── Checkbox ─────────────────────────────────────────────── */
 
 /* Checkbox checkmark (L-shape rotated) */
+.checkbox-checked {
+  position: relative;
+}
 .checkbox-checked::after {
   content: "";
-  display: block;
+  position: absolute;
   width: 10px;
   height: 6px;
   border-left: 2px solid var(--truf-forest-900);

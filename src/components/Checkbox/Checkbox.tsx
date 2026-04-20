@@ -10,10 +10,8 @@ export interface CheckboxProps {
 export function Checkbox({ checked, onChange, label, disabled = false }: CheckboxProps) {
   const visualClass = [
     'w-[18px] h-[18px] border-2 rounded-[4px] inline-grid place-items-center shrink-0',
-    checked ? 'bg-lime-500 border-lime-500 checkbox-checked' : '',
-  ]
-    .filter(Boolean)
-    .join(' ');
+    checked ? 'bg-lime-500 border-lime-500 checkbox-checked' : 'bg-transparent',
+  ].join(' ');
 
   const visualStyle: React.CSSProperties = {
     transition: 'all var(--truf-duration-fast)',
