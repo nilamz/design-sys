@@ -1,0 +1,15 @@
+/* ============================================================
+   TRUF DESIGN SYSTEM — COMPONENT CSS
+   CSS that Tailwind utilities cannot express:
+   - Pseudo-element effects (::before, ::after)
+   - Non-standard box-shadow values (focus glow rings)
+   - CSS transitions referencing motion tokens
+   ============================================================ */
+
+/* ── Input ────────────────────────────────────────────────── */
+
+.input-focus:focus {
+  outline: none;
+  border-color: var(--truf-lime-500);
+  box-shadow: 0 0 0 3px rgba(45, 214, 83, 0.15);
+}

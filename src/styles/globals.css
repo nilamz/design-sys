@@ -13,6 +13,9 @@
 /* 2. All --truf-* custom properties */
 @import "../tokens/index.css";
 
+/* 2b. Component-specific CSS (pseudo-elements, focus rings) */
+@import "../styles/components.css";
+
 /* 3. Map tokens to Tailwind utilities via @theme inline
       "inline" required because all values use var() references */
 @theme inline {
