@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc --project tsconfig.lib.json",
+    "build": "vite build && tsc --project tsconfig.lib.json && node -e \"const f='dist/index.d.ts';const fs=require('fs');fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/import.*globals\\.css.*\\n/,''))\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

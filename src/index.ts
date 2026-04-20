@@ -1,5 +1,6 @@
 // Truf Design System — barrel export
 // CSS: consumers import '@truf/design-system/styles' separately
+import './styles/globals.css';
 
 export { Alert } from './components/Alert';
 export { Badge } from './components/Badge';
