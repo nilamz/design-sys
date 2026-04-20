@@ -11,6 +11,20 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    lib: {
+      entry: path.resolve(dirname, 'src/index.ts'),
+      formats: ['es'],
+      fileName: 'truf-design-system',
+      cssFileName: 'styles',
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@vis.gl/react-google-maps'],
+      output: {
+        preserveModules: false,
+      },
+    },
+  },
   test: {
     projects: [{
       extends: true,

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface RadioButtonProps {
   checked: boolean;
   onChange: (checked: boolean) => void;
