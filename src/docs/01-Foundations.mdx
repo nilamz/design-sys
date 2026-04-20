@@ -1,0 +1,53 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Overview" />
+
+<div className="section-header">
+  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+    01 — Foundations
+    <span style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+  </div>
+  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.25rem, 4.5vw, 3.25rem)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.03em', margin: '0 0 1rem' }}>
+    Where the <em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>system</em> begins.
+  </h1>
+  <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', maxWidth: 680, lineHeight: 1.55 }}>
+    Foundations are the bedrock — the brand principles, design philosophy, and UX rules every screen, component, and interaction must honor.
+  </p>
+</div>
+
+## Brand Principles
+
+Truf exists at the intersection of **truth and technology**. Our design system codifies four principles that keep every pixel accountable to that mission.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', marginTop: '2rem' }}>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+    <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Integrity First</h4>
+    <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>The false must never be confused with the true. Clarity, honesty, and verification are non-negotiable across every touchpoint.</p>
+  </div>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+    <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Always Ahead</h4>
+    <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>We stay ahead of threats. Interfaces feel responsive, anticipatory, and lightweight — performance is a feature, not a fix.</p>
+  </div>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+    <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Human at the Center</h4>
+    <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>Biometrics are personal. Every flow treats users with dignity — no cold, mechanical language or surveillance aesthetics.</p>
+  </div>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+    <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Engineered Minimalism</h4>
+    <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>Technical precision meets refined restraint. No decoration without function. Every element earns its place on the canvas.</p>
+  </div>
+</div>
+
+## Design Philosophy
+
+Inspired by the rigor of Material Design and the flexibility of MUI, but shaped by Truf's singular voice. We believe in **material honesty** — digital surfaces should feel like what they are, never mimicking physical objects for their own sake. We pair **technological clarity** (crisp edges, monospace accents, scan-frame iconography) with **editorial warmth** (italic serifs, cream surfaces, generous whitespace).
+
+## UX Principles
+
+| Principle | Manifestation |
+|-----------|--------------|
+| **Clarity** | One primary action per view. Visible hierarchy. No ambiguous labels. |
+| **Hierarchy** | Scale, weight, and color combine — never decoration alone — to guide the eye. |
+| **Feedback** | Every action gets a response within 100ms. Loading, success, error states are first-class. |
+| **Consistency** | Patterns repeat across products. If a pattern exists, use it before inventing a new one. |
+| **Progressive Disclosure** | Reveal complexity only when needed. Defaults should succeed for 80% of users. |

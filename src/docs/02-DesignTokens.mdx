@@ -1,0 +1,148 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design Tokens/Overview" />
+
+<div className="section-header">
+  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+    02 — Design Tokens
+    <span style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+  </div>
+  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.25rem, 4.5vw, 3.25rem)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.03em', margin: '0 0 1rem' }}>
+    The atomic <em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>language.</em>
+  </h1>
+  <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', maxWidth: 680, lineHeight: 1.55 }}>
+    Tokens are the single source of truth. Colors, type, space, radius, shadow, and motion — all expressed as named variables that flow from design into code without translation loss.
+  </p>
+</div>
+
+## Color / Core Palette
+
+Truf's palette is bold and deliberate — deep forest green as the grounding neutral, vibrant lime as the living accent, mint as the soft connective tissue, and cream as the light canvas.
+
+### Forest — Primary (50 → 900)
+
+<div style={{ display: 'flex', borderRadius: 'var(--radius-md)', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid var(--border)' }}>
+  <div style={{ flex: 1, height: 72, background: '#E8F0EC', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>50</div></div>
+  <div style={{ flex: 1, height: 72, background: '#C4DCC9', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>100</div></div>
+  <div style={{ flex: 1, height: 72, background: '#97C0A3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>200</div></div>
+  <div style={{ flex: 1, height: 72, background: '#6AA47C', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>300</div></div>
+  <div style={{ flex: 1, height: 72, background: '#3E8B5F', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>400</div></div>
+  <div style={{ flex: 1, height: 72, background: '#1E7A5E', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>500</div></div>
+  <div style={{ flex: 1, height: 72, background: '#135C46', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>600</div></div>
+  <div style={{ flex: 1, height: 72, background: '#0E4535', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>700</div></div>
+  <div style={{ flex: 1, height: 72, background: '#0B2E24', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>800</div></div>
+  <div style={{ flex: 1, height: 72, background: '#061A13', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>900</div></div>
+</div>
+
+### Lime — Accent (50 → 900)
+
+<div style={{ display: 'flex', borderRadius: 'var(--radius-md)', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid var(--border)' }}>
+  <div style={{ flex: 1, height: 72, background: '#E9FCEF', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>50</div></div>
+  <div style={{ flex: 1, height: 72, background: '#C6F6D0', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>100</div></div>
+  <div style={{ flex: 1, height: 72, background: '#8FEEAA', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>200</div></div>
+  <div style={{ flex: 1, height: 72, background: '#5DE382', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>300</div></div>
+  <div style={{ flex: 1, height: 72, background: '#34E06A', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>400</div></div>
+  <div style={{ flex: 1, height: 72, background: '#2DD653', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0A3A16' }}><div style={{ fontWeight: 600 }}>500</div></div>
+  <div style={{ flex: 1, height: 72, background: '#22B040', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>600</div></div>
+  <div style={{ flex: 1, height: 72, background: '#188831', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>700</div></div>
+  <div style={{ flex: 1, height: 72, background: '#105F23', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>800</div></div>
+  <div style={{ flex: 1, height: 72, background: '#0A3A16', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#F5F1E8' }}><div style={{ fontWeight: 600 }}>900</div></div>
+</div>
+
+### Mint — Supporting (50 → 400)
+
+<div style={{ display: 'flex', borderRadius: 'var(--radius-md)', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid var(--border)' }}>
+  <div style={{ flex: 1, height: 72, background: '#F1FAF5', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>50</div></div>
+  <div style={{ flex: 1, height: 72, background: '#D6F0E0', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>100</div></div>
+  <div style={{ flex: 1, height: 72, background: '#B5E8D4', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>200</div></div>
+  <div style={{ flex: 1, height: 72, background: '#9FE5C9', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>300</div></div>
+  <div style={{ flex: 1, height: 72, background: '#7FD0AF', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: 10, color: '#0B2E24' }}><div style={{ fontWeight: 600 }}>400</div></div>
+</div>
+
+### Semantic Colors
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
+  <div style={{ padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div style={{ width: 36, height: 36, borderRadius: 'var(--radius-sm)', background: '#22B040', flexShrink: 0 }} />
+    <div><div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: 2 }}>Success</div><div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.875rem', color: 'var(--text-primary)' }}>#22B040</div></div>
+  </div>
+  <div style={{ padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div style={{ width: 36, height: 36, borderRadius: 'var(--radius-sm)', background: '#E6A817', flexShrink: 0 }} />
+    <div><div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: 2 }}>Warning</div><div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.875rem', color: 'var(--text-primary)' }}>#E6A817</div></div>
+  </div>
+  <div style={{ padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div style={{ width: 36, height: 36, borderRadius: 'var(--radius-sm)', background: '#DC4B3F', flexShrink: 0 }} />
+    <div><div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: 2 }}>Error</div><div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.875rem', color: 'var(--text-primary)' }}>#DC4B3F</div></div>
+  </div>
+  <div style={{ padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div style={{ width: 36, height: 36, borderRadius: 'var(--radius-sm)', background: '#2B7DD6', flexShrink: 0 }} />
+    <div><div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: 2 }}>Info</div><div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.875rem', color: 'var(--text-primary)' }}>#2B7DD6</div></div>
+  </div>
+</div>
+
+## Typography
+
+Truf pairs a **characterful display serif** (Fraunces, variable axes) with a **clean editorial sans** (Inter, for UI and body) and a precise **monospace** (JetBrains Mono, for data, tokens, and technical labels).
+
+| Role | Font | Size | Weight | Line Height |
+|------|------|------|--------|-------------|
+| Display / H1 | Fraunces | 60px | 400 | 1.02 |
+| H2 | Fraunces | 48px | 400 | 1.1 |
+| H3 | Fraunces | 30px | 500 | 1.2 |
+| H4 / Subhead | Inter | 20px | 600 | 1.3 |
+| Body / Lead | Inter | 18px | 400 | 1.55 |
+| Body / Base | Inter | 16px | 400 | 1.6 |
+| Caption | Inter | 12px | 400 | 1.5 |
+| Mono / Label | JetBrains Mono | 11px | 500 | 1.5 |
+
+## Spacing Scale
+
+A geometric 4px base scale. Most layout decisions use steps `4` (16px) and `8` (32px); larger compositions rely on `16` (64px).
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-1</span><span>4px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 4 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-2</span><span>8px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 8 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-3</span><span>12px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 12 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-4</span><span>16px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 16 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-6</span><span>24px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 24 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-8</span><span>32px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 32 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-12</span><span>48px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 48 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-16</span><span>64px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 64 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-20</span><span>80px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 80 }} /></div>
+  <div style={{ display: 'grid', gridTemplateColumns: '80px 100px 1fr', gap: '1rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.875rem' }}><span>--space-24</span><span>96px</span><div style={{ height: 14, background: 'var(--truf-lime-500)', borderRadius: 3, width: 96 }} /></div>
+</div>
+
+## Border Radius
+
+Truf uses four primary radii, each with a specific role. The signature `pill` (64px) is reserved for interactive pill buttons and chips.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 8 }}>sm<span style={{ opacity: 0.75, fontSize: 11 }}>8px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 12 }}>md<span style={{ opacity: 0.75, fontSize: 11 }}>12px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 16 }}>lg<span style={{ opacity: 0.75, fontSize: 11 }}>16px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 64 }}>pill<span style={{ opacity: 0.75, fontSize: 11 }}>64px</span></div>
+</div>
+
+## Shadows / Elevation
+
+Five elevation levels plus one signature lime glow for high-emphasis actions.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', marginTop: '1.5rem', padding: '1.5rem', background: 'var(--surface)', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 1px 2px rgba(0,0,0,0.20)' }}>xs</div>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 2px 6px rgba(0,0,0,0.25)' }}>sm</div>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 6px 16px rgba(0,0,0,0.30)' }}>md</div>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 14px 34px rgba(0,0,0,0.38)' }}>lg</div>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 28px 60px rgba(0,0,0,0.45)' }}>xl</div>
+  <div style={{ background: 'var(--bg-elevated)', padding: '1.5rem', borderRadius: 'var(--radius-md)', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)', boxShadow: '0 0 0 1px rgba(45,214,83,0.25), 0 12px 32px rgba(45,214,83,0.20)' }}>glow</div>
+</div>
+
+## Z-Index Layers
+
+| Token | Value | Use Case |
+|-------|-------|----------|
+| `z.base` | 1 | Default stacking context |
+| `z.sticky` | 100 | Sticky headers, side navs |
+| `z.drawer` | 200 | Drawers, side panels |
+| `z.modal` | 400 | Modals, dialogs |
+| `z.toast` | 600 | Snackbars, notifications |
+| `z.tooltip` | 800 | Tooltips, popovers |

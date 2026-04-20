@@ -1,0 +1,97 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Theming System/Overview" />
+
+<div className="section-header">
+  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+    03 — Theming System
+    <span style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+  </div>
+  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.25rem, 4.5vw, 3.25rem)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.03em', margin: '0 0 1rem' }}>
+    Two <em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>modes.</em> Infinite overrides.
+  </h1>
+  <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', maxWidth: 680, lineHeight: 1.55 }}>
+    Truf ships with a dark default (the brand signature) and a light mode for daytime and printable contexts. Both themes are expressed as CSS variables and can be extended without forking the component library.
+  </p>
+</div>
+
+## Theme Structure
+
+The theme object follows MUI conventions — `theme.palette`, `theme.typography`, `theme.spacing()`. Developers consume theme tokens through CSS custom properties; no raw hex values should ever appear in product code.
+
+```typescript
+// theme/index.ts
+export const theme = {
+  palette: {
+    mode: 'dark',
+    primary: {
+      main:         '#0B2E24',  // forest.800
+      contrastText: '#F5F1E8',
+    },
+    secondary: {
+      main:         '#2DD653',  // lime.500
+      contrastText: '#061A13',
+    },
+    background: {
+      default: '#061A13',
+      paper:   '#0B2E24',
+    },
+    text: {
+      primary:   '#F5F1E8',
+      secondary: '#9FE5C9',
+    },
+  },
+  typography: {
+    fontFamily: 'Inter, system-ui, sans-serif',
+    h1: { fontFamily: 'Fraunces, serif', fontSize: '3.75rem', lineHeight: 1.02 },
+  },
+  spacing: (factor: number) => `${factor * 4}px`,
+  shape: { borderRadius: 12 },
+}
+```
+
+## Overriding the Theme
+
+Developers can override any token locally. Overrides cascade deeply without breaking ancestor styles.
+
+```tsx
+// Override accent color for a marketing page
+<TrufThemeProvider theme={{
+  palette: { secondary: { main: '#34E06A' } }
+}}>
+  <LandingPage />
+</TrufThemeProvider>
+```
+
+## Light vs Dark — Token Mapping
+
+| Semantic Token | Dark Value | Light Value |
+|---------------|------------|-------------|
+| `bg.default` | `#061A13` | `#F5F1E8` |
+| `bg.surface` | `#0B2E24` | `#FFFFFF` |
+| `text.primary` | `#F5F1E8` | `#061A13` |
+| `text.secondary` | `#9FE5C9` | `#135C46` |
+| `accent` | `#2DD653` | `#0B2E24` |
+| `border` | `rgba(143,238,170,.12)` | `rgba(11,46,36,.10)` |
+
+### How it works
+
+The dark theme is the default — no `data-theme` attribute needed. Setting `data-theme="light"` on any element swaps all semantic CSS variables within that subtree:
+
+```css
+/* Dark (default) */
+:root {
+  --bg: var(--truf-forest-900);
+  --text-primary: var(--truf-cream);
+  --accent: var(--truf-lime-500);
+}
+
+/* Light override */
+[data-theme="light"] {
+  --bg: var(--truf-cream);
+  --text-primary: var(--truf-forest-900);
+  --accent: var(--truf-forest-800);
+}
+```
+
+Use Storybook's theme toggle (top toolbar) to preview components in both modes.

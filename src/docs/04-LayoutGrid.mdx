@@ -1,0 +1,82 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Layout & Grid/Overview" />
+
+<div className="section-header">
+  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+    04 — Layout & Grid
+    <span style={{ flex: 1, height: 1, background: 'var(--border)' }} />
+  </div>
+  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.25rem, 4.5vw, 3.25rem)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.03em', margin: '0 0 1rem' }}>
+    A <em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>twelve-column</em> scaffold.
+  </h1>
+  <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', maxWidth: 680, lineHeight: 1.55 }}>
+    Truf's layout engine follows MUI's 12-column grid with five breakpoints. Column widths are fluid; gutters and margins scale with viewport.
+  </p>
+</div>
+
+## 12-Column Grid
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 4, marginTop: '1.5rem', marginBottom: '2rem' }}>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>1</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>2</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>3</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>4</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>5</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>6</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>7</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>8</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>9</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>10</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>11</div>
+  <div style={{ background: 'rgba(45,214,83,0.12)', border: '1px solid rgba(45,214,83,0.25)', borderRadius: 4, padding: '1rem 0', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--truf-lime-400)' }}>12</div>
+</div>
+
+## Breakpoints
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '140px 80px 1fr', gap: '1rem', alignItems: 'center', padding: '0.75rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-primary)' }}>xs — Mobile</span>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--truf-lime-400)' }}>0</span>
+    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>0 – 599px</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '140px 80px 1fr', gap: '1rem', alignItems: 'center', padding: '0.75rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-primary)' }}>sm — Mobile L</span>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--truf-lime-400)' }}>600</span>
+    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>600 – 899px</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '140px 80px 1fr', gap: '1rem', alignItems: 'center', padding: '0.75rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-primary)' }}>md — Tablet</span>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--truf-lime-400)' }}>900</span>
+    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>900 – 1199px</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '140px 80px 1fr', gap: '1rem', alignItems: 'center', padding: '0.75rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-primary)' }}>lg — Laptop</span>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--truf-lime-400)' }}>1200</span>
+    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>1200 – 1535px</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '140px 80px 1fr', gap: '1rem', alignItems: 'center', padding: '0.75rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-primary)' }}>xl — Desktop</span>
+    <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--truf-lime-400)' }}>1536</span>
+    <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>1536px +</span>
+  </div>
+</div>
+
+## Container & Gutter Rules
+
+| Breakpoint | Max Container | Gutter | Outer Margin |
+|-----------|---------------|--------|--------------|
+| xs | 100% | 16px | 16px |
+| sm | 600px | 24px | 24px |
+| md | 900px | 24px | 32px |
+| lg | 1200px | 32px | 48px |
+| xl | 1440px | 32px | 64px |
+
+## Responsive Usage
+
+```tsx
+<Grid container spacing={4}>
+  <Grid item xs={12} md={8}>Primary content</Grid>
+  <Grid item xs={12} md={4}>Sidebar</Grid>
+</Grid>
+```
