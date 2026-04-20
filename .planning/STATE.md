@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-04-19)
 
 **Core value:** Every component and token faithfully reproduces the Truf brand language — consistent, accessible, and ready to drop into any Truf product.
-**Current focus:** Phase 3 - Display & Feedback Components
+**Current focus:** Phase 4 - Data Display Components
 
 ## Current Position
 
 Phase: 3 of 4 (Display & Feedback Components)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-04-20 - Completed plan 03-02: Progress, Skeleton, and Toast components with CSS @keyframes animations and auto-dismiss timer
+Plan: 3 of 3 in current phase
+Status: Phase complete — all 3 plans done
+Last activity: 2026-04-20 - Completed plan 03-03: PriceAlertCard and RideMap composite/integration components
 
-Progress: [███████░░░] 75%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 6 min
-- Total execution time: 0.50 hours
+- Total plans completed: 7
+- Average duration: 5.7 min
+- Total execution time: 0.58 hours
 
 **By Phase:**
 
@@ -29,13 +29,14 @@ Progress: [███████░░░] 75%
 |-------|-------|-------|----------|
 | 01-foundation | 2 | 27 min | 13.5 min |
 | 02-core-interactive-components | 2 | 6 min | 3 min |
-| 03-display-feedback-components | 2 | 8 min | 4 min |
+| 03-display-feedback-components | 3 | 13 min | 4.3 min |
 
 **Recent Trend:**
 - Last 5 plans: 20 min
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 03 P03 | 5 | 2 tasks | 10 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,10 @@ Recent decisions affecting current work:
 - 03-02: Toast is controlled component — parent manages visible state, matching Switch/Checkbox pattern
 - 03-02: z-[600] arbitrary Tailwind value for --truf-z-toast (z-index tokens not in @theme, use arbitrary values per Pitfall 2)
 - 03-02: vitest config only runs .stories.tsx via @storybook/addon-vitest browser runner; .test.tsx files exist but not executed
+- [Phase 03-03]: Polyline used as direct component import — @vis.gl/react-google-maps v1.x exports it directly, no useMap useEffect needed
+- [Phase 03-03]: RideMap tests mock entire @vis.gl/react-google-maps via vi.mock() — JSDOM cannot initialize Google Maps JS API
+- [Phase 03-03]: Pin marker colors hardcoded as hex (#2DD653, #061A13) — Google Maps JS API cannot read CSS custom properties
+- [Phase 03-03]: Empty apiKey renders fallback placeholder div — enables Storybook NoApiKey story and container tests without credentials
 
 ### Pending Todos
 
@@ -80,5 +85,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-20
-Stopped at: Completed 03-02-PLAN.md — Phase 3 plan 2 of 2 done (Progress, Skeleton, Toast). Phase 3 complete.
+Stopped at: Completed 03-03-PLAN.md — PriceAlertCard and RideMap. Phase 3 plan 3 of 3 done. Phase 3 complete.
 Resume file: None

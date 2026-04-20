@@ -114,17 +114,17 @@
 
 ### PriceAlertCard
 
-- [ ] **PRICE-01**: PriceAlertCard renders fare estimate with currency and amount prominently displayed
-- [ ] **PRICE-02**: PriceAlertCard shows surge pricing indicator with multiplier badge (e.g. 1.5x) when surge is active
-- [ ] **PRICE-03**: PriceAlertCard displays fare breakdown (base fare, distance, time, surge, total) in a structured list
-- [ ] **PRICE-04**: PriceAlertCard uses Truf card styling (surface bg, border, lg radius, hover elevation)
+- [x] **PRICE-01**: PriceAlertCard renders fare estimate with currency and amount prominently displayed
+- [x] **PRICE-02**: PriceAlertCard shows surge pricing indicator with multiplier badge (e.g. 1.5x) when surge is active
+- [x] **PRICE-03**: PriceAlertCard displays fare breakdown (base fare, distance, time, surge, total) in a structured list
+- [x] **PRICE-04**: PriceAlertCard uses Truf card styling (surface bg, border, lg radius, hover elevation)
 
 ### RideMap
 
-- [ ] **MAP-01**: RideMap renders a Google Maps embed with Truf-styled container (border, radius, shadow)
-- [ ] **MAP-02**: RideMap displays pickup and dropoff markers with custom Truf-branded pins (lime accent)
-- [ ] **MAP-03**: RideMap renders route polyline between pickup and dropoff points
-- [ ] **MAP-04**: RideMap accepts lat/lng props for pickup, dropoff, and optional driver location
+- [x] **MAP-01**: RideMap renders a Google Maps embed with Truf-styled container (border, radius, shadow)
+- [x] **MAP-02**: RideMap displays pickup and dropoff markers with custom Truf-branded pins (lime accent)
+- [x] **MAP-03**: RideMap renders route polyline between pickup and dropoff points
+- [x] **MAP-04**: RideMap accepts lat/lng props for pickup, dropoff, and optional driver location
 
 ## v2 Requirements
 
@@ -219,14 +219,14 @@
 | TOAST-01 | Phase 3 | Complete |
 | TOAST-02 | Phase 3 | Complete |
 | TOAST-03 | Phase 3 | Complete |
-| PRICE-01 | Phase 3 | Pending |
-| PRICE-02 | Phase 3 | Pending |
-| PRICE-03 | Phase 3 | Pending |
-| PRICE-04 | Phase 3 | Pending |
-| MAP-01 | Phase 3 | Pending |
-| MAP-02 | Phase 3 | Pending |
-| MAP-03 | Phase 3 | Pending |
-| MAP-04 | Phase 3 | Pending |
+| PRICE-01 | Phase 3 | Complete |
+| PRICE-02 | Phase 3 | Complete |
+| PRICE-03 | Phase 3 | Complete |
+| PRICE-04 | Phase 3 | Complete |
+| MAP-01 | Phase 3 | Complete |
+| MAP-02 | Phase 3 | Complete |
+| MAP-03 | Phase 3 | Complete |
+| MAP-04 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 70 total
