@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-04-19)
 
 ## Current Position
 
-Phase: 3 of 4 (Display & Feedback Components)
-Plan: 3 of 3 in current phase
-Status: Phase complete — all 3 plans done
-Last activity: 2026-04-20 - Completed plan 03-03: PriceAlertCard and RideMap composite/integration components
+Phase: 4 of 4 (Package & Publish)
+Plan: 1 of 1 in current phase
+Status: Phase complete — all 1 plans done
+Last activity: 2026-04-20 - Completed plan 04-01: Barrel export, Vite library build, npm package config
 
-Progress: [████████░░] 80%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -37,6 +37,7 @@ Progress: [████████░░] 80%
 
 *Updated after each plan completion*
 | Phase 03 P03 | 5 | 2 tasks | 10 files |
+| Phase 04 P01 | 15 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,11 @@ Recent decisions affecting current work:
 - [Phase 03-03]: RideMap tests mock entire @vis.gl/react-google-maps via vi.mock() — JSDOM cannot initialize Google Maps JS API
 - [Phase 03-03]: Pin marker colors hardcoded as hex (#2DD653, #061A13) — Google Maps JS API cannot read CSS custom properties
 - [Phase 03-03]: Empty apiKey renders fallback placeholder div — enables Storybook NoApiKey story and container tests without credentials
+- 04-01: Build script order is vite build then tsc — vite cleans dist first, tsc adds declarations after
+- 04-01: cssFileName belongs in build.lib (not build root) in Vite 8.x
+- 04-01: CSS imported in index.ts so Tailwind plugin processes it during library build; cssFileName names the output styles.css
+- 04-01: react/react-dom/@vis.gl moved to devDependencies — listed as peerDependencies, needed for dev but not bundled
+- 04-01: globals.css.d.ts created alongside globals.css to satisfy allowArbitraryExtensions in tsconfig.lib.json
 
 ### Pending Todos
 
@@ -85,5 +91,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-04-20
-Stopped at: Completed 03-03-PLAN.md — PriceAlertCard and RideMap. Phase 3 plan 3 of 3 done. Phase 3 complete.
+Stopped at: Completed 04-01-PLAN.md — Barrel export, Vite library build, npm package config. Phase 4 plan 1 of 1 done. All phases complete.
 Resume file: None

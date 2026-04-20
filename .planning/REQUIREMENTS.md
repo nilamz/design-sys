@@ -11,8 +11,8 @@
 - [x] **INFRA-02**: Tailwind CSS v4 installed and configured
 - [x] **INFRA-03**: Storybook 8 installed and running with Vite builder
 - [x] **INFRA-04**: Component folder structure enforced (tsx, stories, test, index per component)
-- [ ] **INFRA-05**: Barrel export from src/index.ts exposes all components and tokens
-- [ ] **INFRA-06**: Package.json configured for npm publishing with proper exports field
+- [x] **INFRA-05**: Barrel export from src/index.ts exposes all components and tokens
+- [x] **INFRA-06**: Package.json configured for npm publishing with proper exports field
 
 ### Tokens
 
@@ -161,8 +161,8 @@
 | INFRA-02 | Phase 1 | Pending |
 | INFRA-03 | Phase 1 | Pending |
 | INFRA-04 | Phase 1 | Pending |
-| INFRA-05 | Phase 4 | Pending |
-| INFRA-06 | Phase 4 | Pending |
+| INFRA-05 | Phase 4 | Complete |
+| INFRA-06 | Phase 4 | Complete |
 | TOKEN-01 | Phase 1 | Complete |
 | TOKEN-02 | Phase 1 | Complete |
 | TOKEN-03 | Phase 1 | Complete |
