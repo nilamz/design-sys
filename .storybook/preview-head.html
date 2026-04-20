@@ -1,0 +1,77 @@
+<style>
+  /* Ensure docs pages respond to theme changes */
+  body {
+    background: var(--bg) !important;
+    color: var(--text-primary) !important;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  /* Docs page content area */
+  .docs-story,
+  .sbdocs-wrapper,
+  .sbdocs-content {
+    background: var(--bg) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Storybook docs typography */
+  .sbdocs h1, .sbdocs h2, .sbdocs h3, .sbdocs h4 {
+    color: var(--text-primary) !important;
+  }
+  .sbdocs p, .sbdocs li {
+    color: var(--text-secondary) !important;
+  }
+  .sbdocs code {
+    color: var(--truf-lime-400) !important;
+    background: rgba(143,238,170,0.08) !important;
+  }
+
+  /* Docs table styling — no white backgrounds */
+  .sbdocs table,
+  .sbdocs table tr,
+  .sbdocs table tbody tr {
+    background: var(--surface) !important;
+  }
+  .sbdocs table th {
+    color: var(--text-muted) !important;
+    background: var(--surface-2) !important;
+    border-color: var(--border) !important;
+  }
+  .sbdocs table td {
+    color: var(--text-secondary) !important;
+    background: var(--surface) !important;
+    border-color: var(--border) !important;
+  }
+  .sbdocs table tbody tr:nth-child(even),
+  .sbdocs table tbody tr:nth-child(odd) {
+    background: var(--surface) !important;
+  }
+
+  /* ArgsTable / Controls panel in docs */
+  .docblock-argstable-body td,
+  .docblock-argstable-head th {
+    border-color: var(--border) !important;
+  }
+
+  /* 100px spacing between each h2/h3 subheading section in docs */
+  .sbdocs h2,
+  .sbdocs h3 {
+    margin-top: 100px !important;
+  }
+  .sbdocs h2:first-of-type,
+  .sbdocs h3:first-of-type {
+    margin-top: 2rem !important;
+  }
+
+  /* Code block styling matching HTML doc */
+  .sbdocs pre {
+    background: #040D09 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-md) !important;
+    padding: 1.25rem !important;
+    font-family: var(--font-mono) !important;
+    font-size: 0.875rem !important;
+    line-height: 1.65 !important;
+    color: var(--truf-mint-200) !important;
+  }
+</style>

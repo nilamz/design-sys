@@ -11,6 +11,7 @@ const preview: Preview = {
       },
       defaultTheme: 'dark',
       attributeName: 'data-theme',
+      parentSelector: 'body',
     }),
   ],
   parameters: {
