@@ -1,0 +1,136 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Implementation/File Structure" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  10 — File Structure
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Where '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'everything'}</em>{' lives.'}</h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+A predictable folder tree for the React implementation. Figma libraries mirror the same structure, so designers and engineers find each other's work instantly.
+</p>
+
+## Code Repository
+
+<div style={{ background: 'var(--code-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '1.5rem', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', lineHeight: 1.8, marginTop: '1.5rem', overflowX: 'auto', position: 'relative' }}>
+<span style={{ color: 'var(--truf-lime-400)' }}>{'@truf/ui'}</span> · <span style={{ color: 'var(--text-muted)' }}>{'src/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'tokens/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>colors.css</span>         <span style={{ color: 'var(--code-muted)' }}># full palette, ramps 50–900</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>typography.css</span>     <span style={{ color: 'var(--code-muted)' }}># families, sizes, weights</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>spacing.css</span>        <span style={{ color: 'var(--code-muted)' }}># 4px base scale</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>radius.css</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>shadows.css</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>motion.css</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   └── </span><span style={{ color: 'var(--code-text)' }}>z-index.css</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'styles/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>globals.css</span>        <span style={{ color: 'var(--code-muted)' }}># @theme mapping + dark/light themes</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   └── </span><span style={{ color: 'var(--code-text)' }}>components.css</span>     <span style={{ color: 'var(--code-muted)' }}># component-specific pseudo-element CSS</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'components/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'Button/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   │   ├── </span><span style={{ color: 'var(--code-text)' }}>Button.tsx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   │   ├── </span><span style={{ color: 'var(--code-text)' }}>Button.test.tsx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   │   ├── </span><span style={{ color: 'var(--code-text)' }}>Button.stories.tsx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   │   └── </span><span style={{ color: 'var(--code-text)' }}>index.ts</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'Input/'}</span>          <span style={{ color: 'var(--code-text)' }}>{'   FieldGroup/'}</span>       <span style={{ color: 'var(--code-text)' }}>{'   Card/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'Switch/'}</span>         <span style={{ color: 'var(--code-text)' }}>{'   Checkbox/'}</span>        <span style={{ color: 'var(--code-text)' }}>{'   Tabs/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'Badge/'}</span>          <span style={{ color: 'var(--code-text)' }}>{'   Chip/'}</span>            <span style={{ color: 'var(--code-text)' }}>{'   Alert/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'Progress/'}</span>       <span style={{ color: 'var(--code-text)' }}>{'   Skeleton/'}</span>        <span style={{ color: 'var(--code-text)' }}>{'   Toast/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'PriceAlertCard/'}</span> <span style={{ color: 'var(--code-text)' }}>{'   RideMap/'}</span>          <span style={{ color: 'var(--code-text)' }}>{'   RadioButton/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   └── </span><span style={{ color: 'var(--code-text)' }}>index.ts</span>           <span style={{ color: 'var(--code-muted)' }}># barrel exports</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>{'docs/'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>01-Foundations.mdx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>02-DesignTokens.mdx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>03-ThemingSystem.mdx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   ├── </span><span style={{ color: 'var(--code-text)' }}>04-LayoutGrid.mdx</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│   └── </span><span style={{ color: 'var(--code-text)' }}>...</span>               <span style={{ color: 'var(--code-muted)' }}># Behavior + Implementation docs</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>│</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--code-text)' }}>index.ts</span>               <span style={{ color: 'var(--code-muted)' }}># package barrel export</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--code-text)' }}>main.tsx</span>               <span style={{ color: 'var(--code-muted)' }}># dev app entry</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>└── </span><span style={{ color: 'var(--code-text)' }}>App.tsx</span>
+</div>
+
+## Figma Library
+
+<div style={{ background: 'var(--code-bg)', border: '1px solid var(--border)', borderRadius: 12, padding: '1.5rem', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', lineHeight: 1.8, marginTop: '1.5rem', overflowX: 'auto' }}>
+<span style={{ color: 'var(--truf-lime-400)' }}>{'Truf Design System (Figma)'}</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>🎨 01 · Foundations</span>        <span style={{ color: 'var(--code-muted)' }}># color styles, type styles, effects</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>🎨 02 · Tokens</span>             <span style={{ color: 'var(--code-muted)' }}># variables (Figma Variables)</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>🧩 03 · Components</span>         <span style={{ color: 'var(--code-muted)' }}># all components as master sets</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>🧱 04 · Layouts</span>            <span style={{ color: 'var(--code-muted)' }}># page templates, grids</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>├── </span><span style={{ color: 'var(--truf-lime-400)' }}>🔤 05 · Icons</span>
+{`
+`}<span style={{ color: 'var(--text-muted)' }}>└── </span><span style={{ color: 'var(--truf-lime-400)' }}>📖 06 · Patterns</span>           <span style={{ color: 'var(--code-muted)' }}># composed flows (verification, KYC)</span>
+</div>
+
+## Scaling for Enterprise
+
+<div style={{ overflowX: 'auto', marginTop: '1.5rem', marginBottom: '2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', borderSpacing: 0, margin: 0, padding: 0, fontFamily: "'Inter', sans-serif", fontSize: '0.875rem' }}>
+    <thead>
+      <tr>
+        {['Concern', 'Strategy'].map((h) => (
+          <th key={h} style={{ textAlign: 'left', padding: '0.75rem 1.25rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>{h}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { concern: 'Versioning', strategy: <>Semver on <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>@truf/ui</code>. Breaking changes require a major bump & migration guide.</> },
+        { concern: 'Naming', strategy: <>Kebab-case tokens (<code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>--truf-lime-500</code>), PascalCase components (<code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>Button</code>), camelCase props (<code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>variant</code>).</> },
+        { concern: 'Deprecation', strategy: <>Mark with <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>@deprecated</code> in TSDoc + console warning. Remove after two minor versions.</> },
+        { concern: 'Multi-brand', strategy: <>Override <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>ThemeProvider</code> at app root. Never fork components.</> },
+        { concern: 'Docs', strategy: <>Storybook + MDX. Every component ships with usage, props, a11y notes.</> },
+      ].map((row, i) => (
+        <tr key={row.concern} style={{ borderBottom: i < 4 ? '1px solid var(--border)' : 'none' }}>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontWeight: 600, color: 'var(--text-primary)', whiteSpace: 'nowrap' }}>{row.concern}</td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', color: 'var(--text-secondary)' }}>{row.strategy}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

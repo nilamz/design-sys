@@ -151,6 +151,10 @@
   --text-muted:     #7A8F82;
   --accent:         var(--truf-lime-500);
   --accent-hover:   var(--truf-lime-400);
+  --code-bg:        #040D09;
+  --code-text:      #B5E8D4;
+  --code-muted:     #7A8F82;
+  --code-accent:    var(--truf-lime-400);
 }
 
 /* Light theme overrides */
@@ -166,6 +170,10 @@
   --text-muted:     var(--truf-neutral-500);
   --accent:         var(--truf-forest-800);
   --accent-hover:   var(--truf-forest-700);
+  --code-bg:        var(--truf-cream-2);
+  --code-text:      var(--truf-forest-800);
+  --code-muted:     var(--truf-neutral-500);
+  --code-accent:    var(--truf-forest-700);
 }
 
 /* 5. Base body styles */

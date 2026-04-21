@@ -1,0 +1,79 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Implementation/Design to Code" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  08 — Design → Code
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'From token to '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'production.'}</em></h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+The same tokens live in Figma, Style Dictionary, CSS variables, and the JS theme object. Designers and engineers speak the same language.
+</p>
+
+## Token Mapping Table
+
+<div style={{ overflowX: 'auto', marginTop: '1.5rem', marginBottom: '2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', borderSpacing: 0, margin: 0, padding: 0, fontFamily: "'Inter', sans-serif", fontSize: '0.875rem' }}>
+    <thead>
+      <tr>
+        {['Figma Variable', 'CSS Variable', 'JS Theme Path', 'Tailwind'].map((h) => (
+          <th key={h} style={{ textAlign: 'left', padding: '0.75rem 1.25rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>{h}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { figma: 'color/primary/main', css: '--truf-forest-800', js: 'palette.primary.main', tw: 'bg-forest-800' },
+        { figma: 'color/secondary/main', css: '--truf-lime-500', js: 'palette.secondary.main', tw: 'bg-lime-500' },
+        { figma: 'space/4', css: '--space-4', js: 'theme.spacing(4)', tw: 'p-4' },
+        { figma: 'radius/pill', css: '--radius-pill', js: 'shape.borderRadius.pill', tw: 'rounded-full' },
+        { figma: 'type/h1', css: '--text-6xl', js: 'typography.h1', tw: 'text-6xl' },
+      ].map((row, i) => (
+        <tr key={row.figma} style={{ borderBottom: i < 4 ? '1px solid var(--border)' : 'none' }}>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)' }}>
+            <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>{row.figma}</code>
+          </td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)' }}>
+            <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>{row.css}</code>
+          </td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{row.js}</td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: 'var(--truf-lime-400)' }}>{row.tw}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## The `sx` Prop — Inline Theme Access
+
+```tsx
+// Instead of this (brittle, untyped):
+<Box style={{ padding: '16px', background: '#2DD653' }}>
+
+// Do this (token-driven, typed, theme-aware):
+<Box sx={{
+  p: 4,                        // theme.spacing(4) = 16px
+  bgcolor: 'secondary.main',   // theme.palette.secondary.main
+  color: 'primary.main',
+  borderRadius: 'pill',
+  '&:hover': { bgcolor: 'secondary.light' },
+}}>
+```
+
+## Component Usage
+
+```tsx
+import { Button, Card, TextField } from '@truf/ui'
+
+export default function LoginForm() {
+  return (
+    <Card elevation={1}>
+      <TextField label="Email" type="email" fullWidth />
+      <Button variant="contained" size="large">
+        Verify identity
+      </Button>
+    </Card>
+  )
+}
+```

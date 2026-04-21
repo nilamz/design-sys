@@ -1,0 +1,91 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Behavior/Accessibility" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  07 — Accessibility
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Truth is for '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'everyone.'}</em></h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Every Truf component ships WCAG 2.1 AA-compliant by default. Accessibility is not a release blocker — it's a precondition for merging.
+</p>
+
+## Contrast Ratios
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <div style={{ padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 160 }}>
+    <div>
+      <div style={{ fontFamily: "'Fraunces', serif", fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>Preserve the truth</div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>Large body and display on default bg</div>
+    </div>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-muted)' }}>AA · AAA</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', fontWeight: 600, color: 'var(--truf-lime-400)' }}>14.8 : 1</span>
+    </div>
+  </div>
+
+  <div style={{ padding: '1.25rem', background: '#2DD653', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 160 }}>
+    <div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', fontWeight: 600, color: '#061A13', marginBottom: '0.5rem' }}>Get to know Truf →</div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.75rem', color: '#0B2E24', lineHeight: 1.4 }}>CTA button · lime on forest</div>
+    </div>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: '#0B2E24' }}>AA · AAA</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', fontWeight: 600, color: '#061A13' }}></span>
+    </div>
+  </div>
+
+  <div style={{ padding: '1.25rem', background: '#9FE5C9', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 160 }}>
+    <div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', fontWeight: 600, color: '#061A13', marginBottom: '0.5rem' }}>Secondary text</div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.75rem', color: '#0B2E24', lineHeight: 1.4 }}>Mint on surface — long-form</div>
+    </div>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: '#0B2E24' }}>AA pass</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', fontWeight: 600, color: '#061A13' }}>7.1 : 1</span>
+    </div>
+  </div>
+
+  <div style={{ padding: '1.25rem', background: '#F5F1E8', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 160 }}>
+    <div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', fontWeight: 600, color: '#061A13', marginBottom: '0.5rem' }}>Light theme default</div>
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.75rem', color: '#0B2E24', lineHeight: 1.4 }}>Forest on cream</div>
+    </div>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: '#0B2E24' }}>AA · AAA</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', fontWeight: 600, color: 'var(--truf-lime-400)' }}>13.4 : 1</span>
+    </div>
+  </div>
+</div>
+
+## Standards
+
+<div style={{ overflowX: 'auto', marginTop: '1.5rem', marginBottom: '2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', borderSpacing: 0, margin: 0, padding: 0, fontFamily: "'Inter', sans-serif", fontSize: '0.875rem' }}>
+    <thead>
+      <tr>
+        {['Requirement', 'Target', "Truf's Implementation"].map((h) => (
+          <th key={h} style={{ textAlign: 'left', padding: '0.75rem 1.25rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>{h}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { req: 'Text contrast (normal)', target: '4.5 : 1', impl: 'All body meets 7+' },
+        { req: 'Text contrast (large)', target: '3 : 1', impl: 'All headings meet 9+' },
+        { req: 'Focus indicator', target: 'Always visible', impl: '2px lime outline, 2px offset' },
+        { req: 'Keyboard nav', target: '100% reachable', impl: 'Tab, Enter, Esc, arrows supported' },
+        { req: 'Screen reader', target: 'ARIA + semantic HTML', impl: 'role, aria-label, aria-live on dynamic' },
+        { req: 'Motion', target: 'Respects preference', impl: 'prefers-reduced-motion disables all' },
+        { req: 'Touch target', target: '≥ 44 × 44px', impl: 'All buttons, chips, controls pad to 44px' },
+      ].map((row, i) => (
+        <tr key={row.req} style={{ borderBottom: i < 6 ? '1px solid var(--border)' : 'none' }}>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontWeight: 500, color: 'var(--text-primary)' }}>{row.req}</td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', color: 'var(--truf-lime-400)' }}>{row.target}</td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', color: 'var(--text-secondary)' }}>{row.impl}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

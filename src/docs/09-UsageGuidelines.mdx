@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Implementation/Usage Guidelines" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  09 — Usage Guidelines
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{"Do's and "}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{"don'ts."}</em></h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Patterns that protect the brand, and anti-patterns that dilute it. When in doubt, choose restraint.
+</p>
+
+export const DoCard = ({ children }) => (
+  <div style={{ flex: 1, padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderLeft: '3px solid var(--truf-lime-500)', borderRadius: 'var(--radius-md)' }}>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--truf-lime-400)', marginBottom: '0.75rem' }}>✓ Do</div>
+    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-secondary)', margin: 0 }}>{children}</p>
+  </div>
+);
+
+export const DontCard = ({ children }) => (
+  <div style={{ flex: 1, padding: '1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderLeft: '3px solid #E53935', borderRadius: 'var(--radius-md)' }}>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#E53935', marginBottom: '0.75rem' }}>✕ Don't</div>
+    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-secondary)', margin: 0 }}>{children}</p>
+  </div>
+);
+
+## Color
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <DoCard>Use lime as a single, decisive accent per view — the one CTA, the one active state, the one highlight word.</DoCard>
+  <DontCard>Don't distribute lime evenly across multiple elements. It loses impact and becomes visual noise.</DontCard>
+</div>
+
+## Typography
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <DoCard>Pair the Fraunces italic with roman in the same heading to create rhythm and emphasize meaning.</DoCard>
+  <DontCard>Don't set body copy in Fraunces — it's a display face. Body always uses Inter.</DontCard>
+</div>
+
+## Iconography
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <DoCard>Use the scan-bracket icons for Truf product features (Facematch, Liveness, Hub, User).</DoCard>
+  <DontCard>Don't mix icon sets. For generic UI needs, stay consistent with 2px outline Material Icons.</DontCard>
+</div>
+
+## Motion
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <DoCard>Animate <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>transform</code> and <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', padding: '0.1em 0.35em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>opacity</code>. Use standard easing (220ms) for 90% of transitions.</DoCard>
+  <DontCard>Don't animate width, height, or layout properties — they trigger reflows and feel janky.</DontCard>
+</div>

@@ -1,0 +1,72 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Behavior/Interaction & Motion" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  06 — Interaction & Motion
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Motion with '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'intent.'}</em></h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Animation isn't decoration — it communicates cause-and-effect, state change, and hierarchy. Truf animates <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.95rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>transform</code> and <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.95rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>opacity</code> only; all durations are tokenized.
+</p>
+
+## Duration Tokens
+
+<div style={{ overflowX: 'auto', marginTop: '1.5rem', marginBottom: '2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', borderSpacing: 0, margin: 0, padding: 0, fontFamily: "'Inter', sans-serif", fontSize: '0.875rem' }}>
+    <thead>
+      <tr>
+        {['Token', 'Value', 'Use Case'].map((h) => (
+          <th key={h} style={{ textAlign: 'left', padding: '0.75rem 1.25rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>{h}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { token: 'dur.fast', value: '150ms', use: 'Hover, focus, micro-state' },
+        { token: 'dur.base', value: '220ms', use: 'Standard transitions, dropdowns' },
+        { token: 'dur.slow', value: '320ms', use: 'Drawers, modals, page transitions' },
+        { token: 'dur.slower', value: '480ms', use: 'Large surface reveals, celebratory' },
+      ].map((row, i) => (
+        <tr key={row.token} style={{ borderBottom: i < 3 ? '1px solid var(--border)' : 'none' }}>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)' }}>
+            <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>{row.token}</code>
+          </td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', color: 'var(--truf-lime-400)' }}>{row.value}</td>
+          <td style={{ padding: '0.75rem 1.25rem', background: 'var(--surface)', color: 'var(--text-secondary)' }}>{row.use}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Easing Curves
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', marginTop: '1.5rem' }}>
+  {[
+    { name: 'standard', curve: 'cubic-bezier(.4, 0, .2, 1)' },
+    { name: 'emphasized', curve: 'cubic-bezier(.2, 0, 0, 1)' },
+    { name: 'decelerated', curve: 'cubic-bezier(0, 0, .2, 1)' },
+  ].map((easing) => (
+    <div className="motion-card" data-ease={easing.name} key={easing.name} style={{ padding: '1.5rem 1rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', cursor: 'pointer', transition: 'border-color 0.22s' }}>
+      <div className="motion-dot" />
+      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-primary)' }}>{easing.name}</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-muted)' }}>{easing.curve}</span>
+    </div>
+  ))}
+</div>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontStyle: 'italic', color: 'var(--text-muted)', marginTop: '0.75rem' }}>
+Hover each card to preview.
+</p>
+
+## Micro-Interactions
+
+<ul style={{ fontFamily: "'Inter', sans-serif", fontSize: '1rem', lineHeight: 2, color: 'var(--text-secondary)', paddingLeft: '1.25rem', marginTop: '1rem' }}>
+  <li><strong style={{ color: 'var(--text-primary)' }}>Hover:</strong> color, border, or shadow shift (150ms).</li>
+  <li><strong style={{ color: 'var(--text-primary)' }}>Press:</strong> translateY(1px) for tactile press feedback.</li>
+  <li><strong style={{ color: 'var(--text-primary)' }}>Focus:</strong> 2px lime outline with 2px offset — never removed.</li>
+  <li><strong style={{ color: 'var(--text-primary)' }}>Loading:</strong> shimmer skeletons or circular progress — never a spinner with no context.</li>
+  <li><strong style={{ color: 'var(--text-primary)' }}>Enter:</strong> staggered fade-up (y: 12px → 0, opacity: 0 → 1, delay-between: 60ms).</li>
+</ul>

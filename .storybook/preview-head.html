@@ -38,7 +38,7 @@
     color: var(--text-secondary) !important;
   }
   .sbdocs code {
-    color: var(--truf-lime-400) !important;
+    color: var(--code-accent) !important;
     background: rgba(143,238,170,0.08) !important;
   }
 
@@ -97,22 +97,22 @@
     margin-top: 2rem !important;
   }
 
-  /* Code block styling matching HTML doc */
+  /* Code block styling — theme-aware */
   .sbdocs pre,
   .docblock-source pre,
   .docblock-source > div {
-    background: #040D09 !important;
+    background: var(--code-bg) !important;
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
     padding: 1.25rem !important;
     font-family: 'JetBrains Mono', 'Menlo', monospace !important;
     font-size: 0.875rem !important;
     line-height: 1.65 !important;
-    color: #B5E8D4 !important;
+    color: var(--code-text) !important;
     position: relative !important;
   }
   .docblock-source {
-    background: #040D09 !important;
+    background: var(--code-bg) !important;
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
     overflow: hidden !important;
@@ -121,14 +121,14 @@
     border: none !important;
   }
 
-  /* Syntax highlighting — keys: lime, strings: mint, numbers: orange, comments: muted */
+  /* Syntax highlighting — theme-aware */
   .sbdocs pre code,
   .docblock-source code {
     font-family: 'JetBrains Mono', 'Menlo', monospace !important;
     font-size: 0.875rem !important;
     line-height: 1.65 !important;
     background: transparent !important;
-    color: #B5E8D4 !important;
+    color: var(--code-text) !important;
   }
 
   /* Token colors for Prism/highlight.js used by Storybook */
@@ -136,29 +136,29 @@
   .token.attr-name,
   .token.key,
   .token.tag {
-    color: var(--truf-lime-400) !important;
+    color: var(--code-accent) !important;
   }
   .token.string,
   .token.attr-value {
-    color: #9FE5C9 !important;
+    color: var(--text-secondary) !important;
   }
   .token.number,
   .token.boolean {
-    color: #FFB86C !important;
+    color: var(--code-accent) !important;
   }
   .token.comment {
-    color: #7A8F82 !important;
+    color: var(--code-muted) !important;
     font-style: italic !important;
   }
   .token.punctuation,
   .token.operator {
-    color: #8892A6 !important;
+    color: var(--text-muted) !important;
   }
   .token.keyword {
-    color: var(--truf-lime-400) !important;
+    color: var(--code-accent) !important;
   }
   .token.function {
-    color: #FFD580 !important;
+    color: var(--code-accent) !important;
   }
 
   /* "JSON" / language label in top-right */
@@ -171,16 +171,42 @@
     font-size: 10px !important;
     text-transform: uppercase !important;
     letter-spacing: 0.1em !important;
-    color: #7A8F82 !important;
+    color: var(--code-muted) !important;
   }
 
   /* Copy button styling */
   .docblock-source button {
     background: transparent !important;
     border: none !important;
-    color: #7A8F82 !important;
+    color: var(--code-muted) !important;
   }
   .docblock-source button:hover {
-    color: var(--truf-lime-400) !important;
+    color: var(--accent) !important;
+  }
+
+  /* Easing curve animation cards */
+  .motion-dot {
+    width: 28px;
+    height: 28px;
+    background: var(--truf-lime-500);
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateX(-40px);
+  }
+  .motion-card:hover .motion-dot {
+    animation: slideHover 1.2s infinite;
+  }
+  .motion-card[data-ease="standard"]:hover .motion-dot {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .motion-card[data-ease="emphasized"]:hover .motion-dot {
+    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  }
+  .motion-card[data-ease="decelerated"]:hover .motion-dot {
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  @keyframes slideHover {
+    0%, 100% { transform: translateX(-40px); }
+    50% { transform: translateX(40px); }
   }
 </style>
