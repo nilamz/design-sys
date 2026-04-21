@@ -20,7 +20,7 @@ const preview: Preview = {
       storySort: {
         order: [
           'Getting Started', ['Overview', 'Installation', 'Usage', 'MCP', 'Example Projects', 'Templates', 'Learn', 'Design Resources', 'FAQs', 'Support'],
-          'Foundations', ['Principles', 'Design Tokens', 'Theming System', 'Layout & Grid', 'Design to Code', 'Colors', 'Typography', 'Spacing', 'Border Radius', 'Shadows'],
+          'Foundations', ['Principles', 'Design Tokens', 'Theming System', 'Layout & Grid', 'Design to Code', 'Colors', 'Typography', 'Spacing', 'Border Radius', 'Shadows', 'Iconography'],
           'Components',
           'Behavior',
           'Implementation',

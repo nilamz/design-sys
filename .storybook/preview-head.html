@@ -211,6 +211,16 @@
     0%, 100% { transform: translateX(-40px); }
     50% { transform: translateX(40px); }
   }
+
+  /* Icon tile hover animation */
+  .icon-tile {
+    transition: border-color 150ms, background 150ms, transform 150ms;
+  }
+  .icon-tile:hover {
+    border-color: var(--truf-lime-500) !important;
+    background: rgba(45,214,83,0.04) !important;
+    transform: translateY(-2px);
+  }
 </style>
 <script>
   // Mirror data-theme from <html> to <body> so CSS variables work in docs pages.

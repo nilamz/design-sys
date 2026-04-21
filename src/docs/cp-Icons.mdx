@@ -1,0 +1,118 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import {
+  HomeIcon,
+  UserIcon,
+  CogIcon,
+  BellIcon,
+  EnvelopeIcon,
+  MagnifyingGlassIcon,
+  HeartIcon,
+  StarIcon,
+  ShieldCheckIcon,
+  LockClosedIcon,
+  KeyIcon,
+  FingerPrintIcon,
+  EyeIcon,
+  EyeSlashIcon,
+  CheckCircleIcon,
+  XCircleIcon,
+  ExclamationTriangleIcon,
+  InformationCircleIcon,
+  ArrowRightIcon,
+  ArrowLeftIcon,
+  ChevronRightIcon,
+  ChevronDownIcon,
+  PlusIcon,
+  XMarkIcon,
+  Bars3Icon,
+  DocumentIcon,
+  FolderIcon,
+  PhotoIcon,
+  CameraIcon,
+  MapPinIcon,
+  GlobeAltIcon,
+  PhoneIcon,
+  DevicePhoneMobileIcon,
+  ComputerDesktopIcon,
+  CloudIcon,
+  BoltIcon,
+  SparklesIcon,
+  SunIcon,
+  MoonIcon,
+  ClockIcon,
+} from '@heroicons/react/24/outline';
+
+<Meta title="Components/Icons" />
+
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Icons'}</h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Heroicons (24px outline) in Truf's lime accent. 2px stroke, consistent grid. Import from <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.95rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>@heroicons/react/24/outline</code>.
+</p>
+
+export const IconTile = ({ icon: Icon, name }) => (
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.25rem 0.75rem', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+    <Icon style={{ width: 28, height: 28, color: 'var(--truf-lime-500)', strokeWidth: 1.8 }} />
+    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '9px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'center' }}>{name}</span>
+  </div>
+);
+
+<div style={{ fontFamily: "'Fraunces', serif", fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', margin: '0 0 1rem' }}>Navigation</div>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '0.6rem', marginBottom: '2.5rem' }}>
+  <IconTile icon={HomeIcon} name="Home" />
+  <IconTile icon={MagnifyingGlassIcon} name="Search" />
+  <IconTile icon={Bars3Icon} name="Menu" />
+  <IconTile icon={ArrowRightIcon} name="Arrow Right" />
+  <IconTile icon={ArrowLeftIcon} name="Arrow Left" />
+  <IconTile icon={ChevronRightIcon} name="Chevron" />
+  <IconTile icon={ChevronDownIcon} name="Chevron Down" />
+  <IconTile icon={GlobeAltIcon} name="Globe" />
+  <IconTile icon={MapPinIcon} name="Map Pin" />
+  <IconTile icon={PhoneIcon} name="Phone" />
+</div>
+
+<div style={{ fontFamily: "'Fraunces', serif", fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', margin: '0 0 1rem' }}>Security & Identity</div>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '0.6rem', marginBottom: '2.5rem' }}>
+  <IconTile icon={ShieldCheckIcon} name="Shield" />
+  <IconTile icon={LockClosedIcon} name="Lock" />
+  <IconTile icon={KeyIcon} name="Key" />
+  <IconTile icon={FingerPrintIcon} name="Fingerprint" />
+  <IconTile icon={EyeIcon} name="Eye" />
+  <IconTile icon={EyeSlashIcon} name="Eye Off" />
+  <IconTile icon={UserIcon} name="User" />
+</div>
+
+<div style={{ fontFamily: "'Fraunces', serif", fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', margin: '0 0 1rem' }}>Actions & Status</div>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '0.6rem', marginBottom: '2.5rem' }}>
+  <IconTile icon={PlusIcon} name="Plus" />
+  <IconTile icon={XMarkIcon} name="Close" />
+  <IconTile icon={CheckCircleIcon} name="Success" />
+  <IconTile icon={XCircleIcon} name="Error" />
+  <IconTile icon={ExclamationTriangleIcon} name="Warning" />
+  <IconTile icon={InformationCircleIcon} name="Info" />
+  <IconTile icon={BellIcon} name="Bell" />
+  <IconTile icon={HeartIcon} name="Heart" />
+  <IconTile icon={StarIcon} name="Star" />
+  <IconTile icon={BoltIcon} name="Bolt" />
+  <IconTile icon={SparklesIcon} name="Sparkles" />
+</div>
+
+<div style={{ fontFamily: "'Fraunces', serif", fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', margin: '0 0 1rem' }}>Content & System</div>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '0.6rem', marginBottom: '2.5rem' }}>
+  <IconTile icon={EnvelopeIcon} name="Email" />
+  <IconTile icon={DocumentIcon} name="Document" />
+  <IconTile icon={FolderIcon} name="Folder" />
+  <IconTile icon={PhotoIcon} name="Photo" />
+  <IconTile icon={CameraIcon} name="Camera" />
+  <IconTile icon={CogIcon} name="Settings" />
+  <IconTile icon={DevicePhoneMobileIcon} name="Mobile" />
+  <IconTile icon={ComputerDesktopIcon} name="Desktop" />
+  <IconTile icon={CloudIcon} name="Cloud" />
+  <IconTile icon={SunIcon} name="Sun" />
+  <IconTile icon={MoonIcon} name="Moon" />
+  <IconTile icon={ClockIcon} name="Clock" />
+</div>

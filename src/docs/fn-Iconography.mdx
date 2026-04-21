@@ -1,0 +1,61 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Iconography" />
+
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Iconography'}</h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Truf's icons live inside a <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>scan-bracket frame</span> — four corners with an inner glyph. This motif traces directly to the brand's biometric-scan identity. Use the icon family for product features; reach for Material Icons (2px stroke, outlined style) for generic UI needs.
+</p>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '0.75rem', marginTop: '1.5rem' }}>
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M8 14V10a2 2 0 0 1 2-2h4M34 8h4a2 2 0 0 1 2 2v4M40 34v4a2 2 0 0 1-2 2h-4M14 40h-4a2 2 0 0 1-2-2v-4"/>
+      <rect x="18" y="18" width="12" height="12" rx="2" fill="var(--truf-lime-500)" stroke="none"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Hub</div>
+  </div>
+
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M8 14V10a2 2 0 0 1 2-2h4M34 8h4a2 2 0 0 1 2 2v4M40 34v4a2 2 0 0 1-2 2h-4M14 40h-4a2 2 0 0 1-2-2v-4"/>
+      <circle cx="24" cy="19" r="4" fill="var(--truf-lime-500)" stroke="none"/>
+      <path d="M16 34c0-4 4-8 8-8s8 4 8 8" fill="var(--truf-lime-500)" stroke="none"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>User</div>
+  </div>
+
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M8 14V10a2 2 0 0 1 2-2h4M34 8h4a2 2 0 0 1 2 2v4M40 34v4a2 2 0 0 1-2 2h-4M14 40h-4a2 2 0 0 1-2-2v-4"/>
+      <circle cx="19" cy="20" r="1.6" fill="var(--truf-lime-500)"/><circle cx="29" cy="20" r="1.6" fill="var(--truf-lime-500)"/>
+      <path d="M18 28c2 2 4 3 6 3s4-1 6-3"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Facematch</div>
+  </div>
+
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M8 14V10a2 2 0 0 1 2-2h4M34 8h4a2 2 0 0 1 2 2v4M40 34v4a2 2 0 0 1-2 2h-4M14 40h-4a2 2 0 0 1-2-2v-4"/>
+      <path d="M16 20h10l-3-3M32 28H22l3 3" strokeWidth="3.5"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Transactional</div>
+  </div>
+
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M8 14V10a2 2 0 0 1 2-2h4M34 8h4a2 2 0 0 1 2 2v4M40 34v4a2 2 0 0 1-2 2h-4M14 40h-4a2 2 0 0 1-2-2v-4"/>
+      <circle cx="24" cy="20" r="3" fill="var(--truf-lime-500)" stroke="none"/>
+      <path d="M18 32c1-3 3-5 6-5s5 2 6 5" fill="var(--truf-lime-500)" stroke="none"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Liveness</div>
+  </div>
+
+  <div className="icon-tile" style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="var(--truf-lime-500)" strokeWidth="4" strokeLinecap="round" style={{ marginBottom: '0.5rem' }}>
+      <path d="M10 24h28m-8-8 8 8-8 8"/>
+    </svg>
+    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Arrow</div>
+  </div>
+</div>
