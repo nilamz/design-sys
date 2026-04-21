@@ -42,11 +42,21 @@
     background: rgba(143,238,170,0.08) !important;
   }
 
-  /* Docs table styling — no white backgrounds */
+  /* Docs table styling — no white backgrounds, no extra spacing */
   .sbdocs table,
   .sbdocs table tr,
   .sbdocs table tbody tr {
     background: var(--surface) !important;
+  }
+  .sbdocs table {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-spacing: 0 !important;
+  }
+  .sbdocs table thead,
+  .sbdocs table tbody {
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .sbdocs table th {
     color: var(--text-muted) !important;

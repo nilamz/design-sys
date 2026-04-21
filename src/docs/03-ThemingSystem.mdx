@@ -7,6 +7,10 @@ import { Meta } from '@storybook/addon-docs/blocks';
 </div>
 <h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Two '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'modes.'}</em>{' Infinite overrides.'}</h1>
 
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Truf ships with a dark default (the brand signature) and a light mode for daytime and printable contexts. Both themes are expressed as CSS variables and can be extended without forking the component library.
+</p>
+
 ## Theme Structure
 
 The theme object follows MUI conventions — `theme.palette`, `theme.typography`, `theme.spacing()`. Developers consume theme tokens through CSS custom properties; no raw hex values should ever appear in product code.
@@ -57,14 +61,43 @@ Developers can override any token locally. Overrides cascade deeply without brea
 
 ## Light vs Dark — Token Mapping
 
-| Semantic Token | Dark Value | Light Value |
-|---------------|------------|-------------|
-| `bg.default` | `#061A13` | `#F5F1E8` |
-| `bg.surface` | `#0B2E24` | `#FFFFFF` |
-| `text.primary` | `#F5F1E8` | `#061A13` |
-| `text.secondary` | `#9FE5C9` | `#135C46` |
-| `accent` | `#2DD653` | `#0B2E24` |
-| `border` | `rgba(143,238,170,.12)` | `rgba(11,46,36,.10)` |
+<div style={{ overflowX: 'auto', marginTop: '1.5rem', marginBottom: '2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+  <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem' }}>
+    <thead>
+      <tr>
+        <th style={{ textAlign: 'left', padding: '0.75rem 1rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>Semantic Token</th>
+        <th style={{ textAlign: 'left', padding: '0.75rem 1rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>Dark Value</th>
+        <th style={{ textAlign: 'left', padding: '0.75rem 1rem', background: 'var(--surface-2)', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid var(--border)' }}>Light Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { token: 'bg.default', dark: '#061A13', light: '#F5F1E8' },
+        { token: 'bg.surface', dark: '#0B2E24', light: '#FFFFFF' },
+        { token: 'text.primary', dark: '#F5F1E8', light: '#061A13' },
+        { token: 'text.secondary', dark: '#9FE5C9', light: '#135C46' },
+        { token: 'accent', dark: '#2DD653', light: '#0B2E24' },
+        { token: 'border', dark: 'rgba(143,238,170,.12)', light: 'rgba(11,46,36,.10)' },
+      ].map((row, i) => (
+        <tr key={row.token} style={{ borderBottom: i < 5 ? '1px solid var(--border)' : 'none' }}>
+          <td style={{ padding: '0.75rem 1rem', background: 'var(--surface)', color: 'var(--truf-lime-400)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem' }}>{row.token}</td>
+          <td style={{ padding: '0.75rem 1rem', background: 'var(--surface)' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ display: 'inline-block', width: 14, height: 14, borderRadius: 4, background: row.dark, border: '1px solid var(--border)', flexShrink: 0 }} />
+              <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'transparent' }}>{row.dark}</code>
+            </span>
+          </td>
+          <td style={{ padding: '0.75rem 1rem', background: 'var(--surface)' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ display: 'inline-block', width: 14, height: 14, borderRadius: 4, background: row.light, border: '1px solid var(--border)', flexShrink: 0 }} />
+              <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'transparent' }}>{row.light}</code>
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
 ### How it works
 
