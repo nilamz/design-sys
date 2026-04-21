@@ -102,7 +102,7 @@
   .docblock-source pre,
   .docblock-source > div {
     background: var(--code-bg) !important;
-    border: 1px solid var(--border) !important;
+    border: none !important;
     border-radius: 12px !important;
     padding: 1.25rem !important;
     font-family: 'JetBrains Mono', 'Menlo', monospace !important;
@@ -116,6 +116,8 @@
     border: 1px solid var(--border) !important;
     border-radius: 12px !important;
     overflow: hidden !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   .docblock-source > div {
     border: none !important;
@@ -210,3 +212,24 @@
     50% { transform: translateX(40px); }
   }
 </style>
+<script>
+  // Mirror data-theme from <html> to <body> so CSS variables work in docs pages.
+  // The addon-themes decorator sets data-theme on <html>, but docs pages read
+  // CSS variables from body context — this observer keeps them in sync.
+  (function() {
+    var sync = function() {
+      var theme = document.documentElement.getAttribute('data-theme');
+      if (theme) {
+        document.body.setAttribute('data-theme', theme);
+      } else {
+        document.body.removeAttribute('data-theme');
+      }
+    };
+    // Sync on load
+    if (document.body) sync();
+    else document.addEventListener('DOMContentLoaded', sync);
+    // Observe html element for attribute changes
+    var observer = new MutationObserver(sync);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+</script>

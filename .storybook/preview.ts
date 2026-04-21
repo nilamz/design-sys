@@ -11,12 +11,22 @@ const preview: Preview = {
       },
       defaultTheme: 'dark',
       attributeName: 'data-theme',
-      parentSelector: 'body',
     }),
   ],
   parameters: {
     backgrounds: { disable: true },
     layout: 'centered',
+    options: {
+      storySort: {
+        order: [
+          'Getting Started', ['Overview', 'Installation', 'Usage', 'MCP', 'Example Projects', 'Templates', 'Learn', 'Design Resources', 'FAQs', 'Support'],
+          'Foundations', ['Principles', 'Design Tokens', 'Theming System', 'Layout & Grid', 'Design to Code', 'Colors', 'Typography', 'Spacing', 'Border Radius', 'Shadows'],
+          'Components',
+          'Behavior',
+          'Implementation',
+        ],
+      },
+    },
   },
 };
 

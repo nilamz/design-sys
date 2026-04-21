@@ -157,7 +157,7 @@
   --code-accent:    var(--truf-lime-400);
 }
 
-/* Light theme overrides */
+/* Light theme overrides (matches html or any element with data-theme) */
 [data-theme="light"] {
   --bg:             var(--truf-cream);
   --bg-elevated:    #FFFFFF;

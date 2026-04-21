@@ -1,0 +1,134 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Colors" />
+
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  Color / Core Palette
+</div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Colors'}</h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Truf's palette is bold and deliberate — deep forest green as the grounding neutral, vibrant lime as the living accent, mint as the soft connective tissue, and cream as the light canvas.
+</p>
+
+export const ColorRamp = ({ name, label, range, colors }) => (
+  <div style={{ marginBottom: '2.5rem' }}>
+    <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '0.75rem' }}>
+      <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: '1.5rem', fontWeight: 500, color: 'var(--text-primary)', margin: 0 }}>{name}</h3>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)' }}>{label} · {range}</span>
+    </div>
+    <div style={{ display: 'flex', borderRadius: 'var(--radius-md)', overflow: 'hidden', border: '1px solid var(--border)' }}>
+      {colors.map((c, i) => (
+        <div key={c.step} style={{ flex: 1, height: 80, background: c.hex, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0.5rem', fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: i < 4 ? '#0B2E24' : '#F5F1E8' }}>
+          <div style={{ fontWeight: 600 }}>{c.step}</div>
+          <div style={{ opacity: 0.75 }}>{c.hex.replace('#', '')}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+<ColorRamp
+  name="Forest"
+  label="Primary"
+  range="50 → 900"
+  colors={[
+    { step: '50', hex: '#E8F0EC' },
+    { step: '100', hex: '#C4DCC9' },
+    { step: '200', hex: '#97C0A3' },
+    { step: '300', hex: '#6AA47C' },
+    { step: '400', hex: '#3E8B5F' },
+    { step: '500', hex: '#1E7A5E' },
+    { step: '600', hex: '#135C46' },
+    { step: '700', hex: '#0E4535' },
+    { step: '800', hex: '#0B2E24' },
+    { step: '900', hex: '#061A13' },
+  ]}
+/>
+
+<ColorRamp
+  name="Lime"
+  label="Accent"
+  range="50 → 900"
+  colors={[
+    { step: '50', hex: '#E9FCEF' },
+    { step: '100', hex: '#C6F6D0' },
+    { step: '200', hex: '#8FEEAA' },
+    { step: '300', hex: '#5DE382' },
+    { step: '400', hex: '#34E06A' },
+    { step: '500', hex: '#2DD653' },
+    { step: '600', hex: '#22B040' },
+    { step: '700', hex: '#188831' },
+    { step: '800', hex: '#105F23' },
+    { step: '900', hex: '#0A3A16' },
+  ]}
+/>
+
+<ColorRamp
+  name="Mint"
+  label="Supporting"
+  range="50 → 400"
+  colors={[
+    { step: '50', hex: '#F1FAF5' },
+    { step: '100', hex: '#D6F0E0' },
+    { step: '200', hex: '#B5E8D4' },
+    { step: '300', hex: '#9FE5C9' },
+    { step: '400', hex: '#7FD0AF' },
+  ]}
+/>
+
+<ColorRamp
+  name="Neutral"
+  label="Grayscale"
+  range="50 → 900"
+  colors={[
+    { step: '50', hex: '#FAFAF7' },
+    { step: '100', hex: '#F2F2ED' },
+    { step: '200', hex: '#E4E4DB' },
+    { step: '300', hex: '#CBCBC0' },
+    { step: '400', hex: '#9A9A8E' },
+    { step: '500', hex: '#70706A' },
+    { step: '600', hex: '#4F4F4A' },
+    { step: '700', hex: '#2E2E2B' },
+    { step: '800', hex: '#1A1A17' },
+    { step: '900', hex: '#0A0A08' },
+  ]}
+/>
+
+<h3 style={{ fontFamily: "'Fraunces', serif", fontSize: '1.5rem', fontWeight: 500, color: 'var(--text-primary)', margin: '3rem 0 1rem' }}>Semantic Colors</h3>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginTop: '1rem' }}>
+  {[
+    { name: 'Success', hex: '#22B040' },
+    { name: 'Warning', hex: '#E6A817' },
+    { name: 'Error', hex: '#DC4B3F' },
+    { name: 'Info', hex: '#2B7DD6' },
+  ].map((c) => (
+    <div key={c.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '1rem 1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+      <div style={{ width: 36, height: 36, borderRadius: 8, background: c.hex, flexShrink: 0 }} />
+      <div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>{c.name}</div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>{c.hex}</div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<h3 style={{ fontFamily: "'Fraunces', serif", fontSize: '1.5rem', fontWeight: 500, color: 'var(--text-primary)', margin: '3rem 0 1rem' }}>Background & Surface</h3>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginTop: '1rem' }}>
+  {[
+    { name: 'bg / default', hex: '#061A13' },
+    { name: 'surface', hex: '#0B2E24' },
+    { name: 'surface.raised', hex: '#0E4535' },
+    { name: 'cream', hex: '#F5F1E8' },
+  ].map((c) => (
+    <div key={c.name} style={{ borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', overflow: 'hidden' }}>
+      <div style={{ height: 80, background: c.hex }} />
+      <div style={{ padding: '0.75rem 1rem', background: 'var(--surface)' }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.15rem' }}>{c.name}</div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', color: 'var(--text-muted)' }}>{c.hex}</div>
+      </div>
+    </div>
+  ))}
+</div>

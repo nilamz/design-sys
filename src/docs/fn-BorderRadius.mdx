@@ -1,0 +1,16 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Border Radius" />
+
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Border Radius'}</h1>
+
+<p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.1rem', lineHeight: 1.7, color: 'var(--text-secondary)', maxWidth: '42rem', marginBottom: '3rem' }}>
+Truf uses four primary radii, each with a specific role. The signature <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.95rem', padding: '0.15em 0.45em', background: 'rgba(45,214,83,0.15)', borderRadius: 4, color: 'var(--truf-lime-400)' }}>pill</code> (64px) is reserved for interactive pill buttons and chips.
+</p>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 8 }}>sm<span style={{ opacity: 0.75, fontSize: 11 }}>8px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 12 }}>md<span style={{ opacity: 0.75, fontSize: 11 }}>12px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 16 }}>lg<span style={{ opacity: 0.75, fontSize: 11 }}>16px</span></div>
+  <div style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--truf-lime-500), #1E7A5E)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#061A13', fontFamily: 'var(--font-mono)', fontSize: '0.875rem', fontWeight: 500, borderRadius: 64 }}>pill<span style={{ opacity: 0.75, fontSize: 11 }}>64px</span></div>
+</div>
