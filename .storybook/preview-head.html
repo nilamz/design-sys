@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* Ensure docs pages respond to theme changes */
   body {
@@ -15,7 +18,20 @@
   }
 
   /* Storybook docs typography */
-  .sbdocs h1, .sbdocs h2, .sbdocs h3, .sbdocs h4 {
+  .sbdocs h1 {
+    font-family: 'Fraunces', 'Times New Roman', serif !important;
+    font-size: 60px !important;
+    line-height: 1.02 !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.04em !important;
+    color: var(--text-primary) !important;
+  }
+  .sbdocs h1 em {
+    font-style: italic !important;
+    color: var(--truf-lime-400) !important;
+    font-weight: 300 !important;
+  }
+  .sbdocs h2, .sbdocs h3, .sbdocs h4 {
     color: var(--text-primary) !important;
   }
   .sbdocs p, .sbdocs li {
@@ -54,24 +70,107 @@
   }
 
   /* 100px spacing between each h2/h3 subheading section in docs */
-  .sbdocs h2,
-  .sbdocs h3 {
+  .sbdocs-content > h2,
+  .sbdocs-content > h3 {
     margin-top: 100px !important;
+    font-family: var(--font-sans) !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    color: var(--text-muted) !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 1px dashed var(--border) !important;
   }
-  .sbdocs h2:first-of-type,
-  .sbdocs h3:first-of-type {
+  .sbdocs-content > h2:first-of-type,
+  .sbdocs-content > h3:first-of-type {
     margin-top: 2rem !important;
   }
 
   /* Code block styling matching HTML doc */
-  .sbdocs pre {
+  .sbdocs pre,
+  .docblock-source pre,
+  .docblock-source > div {
     background: #040D09 !important;
     border: 1px solid var(--border) !important;
-    border-radius: var(--radius-md) !important;
+    border-radius: 12px !important;
     padding: 1.25rem !important;
-    font-family: var(--font-mono) !important;
+    font-family: 'JetBrains Mono', 'Menlo', monospace !important;
     font-size: 0.875rem !important;
     line-height: 1.65 !important;
-    color: var(--truf-mint-200) !important;
+    color: #B5E8D4 !important;
+    position: relative !important;
+  }
+  .docblock-source {
+    background: #040D09 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+  .docblock-source > div {
+    border: none !important;
+  }
+
+  /* Syntax highlighting — keys: lime, strings: mint, numbers: orange, comments: muted */
+  .sbdocs pre code,
+  .docblock-source code {
+    font-family: 'JetBrains Mono', 'Menlo', monospace !important;
+    font-size: 0.875rem !important;
+    line-height: 1.65 !important;
+    background: transparent !important;
+    color: #B5E8D4 !important;
+  }
+
+  /* Token colors for Prism/highlight.js used by Storybook */
+  .token.property,
+  .token.attr-name,
+  .token.key,
+  .token.tag {
+    color: var(--truf-lime-400) !important;
+  }
+  .token.string,
+  .token.attr-value {
+    color: #9FE5C9 !important;
+  }
+  .token.number,
+  .token.boolean {
+    color: #FFB86C !important;
+  }
+  .token.comment {
+    color: #7A8F82 !important;
+    font-style: italic !important;
+  }
+  .token.punctuation,
+  .token.operator {
+    color: #8892A6 !important;
+  }
+  .token.keyword {
+    color: var(--truf-lime-400) !important;
+  }
+  .token.function {
+    color: #FFD580 !important;
+  }
+
+  /* "JSON" / language label in top-right */
+  .docblock-source [data-language]::before,
+  .sbdocs pre[data-lang]::after {
+    position: absolute !important;
+    top: 0.5rem !important;
+    right: 0.75rem !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    color: #7A8F82 !important;
+  }
+
+  /* Copy button styling */
+  .docblock-source button {
+    background: transparent !important;
+    border: none !important;
+    color: #7A8F82 !important;
+  }
+  .docblock-source button:hover {
+    color: var(--truf-lime-400) !important;
   }
 </style>

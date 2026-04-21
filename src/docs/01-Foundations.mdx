@@ -2,52 +2,69 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Foundations" />
 
-<div className="section-header">
-  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-    01 — Foundations
-    <span style={{ flex: 1, height: 1, background: 'var(--border)' }} />
-  </div>
-  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.25rem, 4.5vw, 3.25rem)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.03em', margin: '0 0 1rem' }}>
-    Where the <em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>system</em> begins.
-  </h1>
-  <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', maxWidth: 680, lineHeight: 1.55 }}>
-    Foundations are the bedrock — the brand principles, design philosophy, and UX rules every screen, component, and interaction must honor.
-  </p>
+<div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', color: 'var(--truf-lime-500)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
+  01 — Foundations
 </div>
+<h1 style={{ fontFamily: "'Fraunces', 'Times New Roman', serif", fontSize: 60, lineHeight: 1.02, fontWeight: 400, letterSpacing: '-0.04em', margin: '0 0 1.5rem', color: 'var(--text-primary)' }}>{'Where the '}<em style={{ fontStyle: 'italic', color: 'var(--truf-lime-400)', fontWeight: 300 }}>{'system'}</em>{' begins.'}</h1>
 
-## Brand Principles
+<h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--text-muted)', margin: '100px 0 1rem', paddingBottom: '0.5rem', borderBottom: '1px dashed var(--border)' }}>Brand Principles</h3>
 
-Truf exists at the intersection of **truth and technology**. Our design system codifies four principles that keep every pixel accountable to that mission.
+<p style={{ color: 'var(--text-secondary)', margin: '0 0 1rem' }}>Truf exists at the intersection of <strong style={{ color: 'var(--text-primary)' }}>truth and technology</strong>. Our design system codifies four principles that keep every pixel accountable to that mission.</p>
 
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', marginTop: '2rem' }}>
-  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', transition: 'border-color 0.22s, transform 0.22s' }}>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--truf-lime-500)" strokeWidth="1.8" style={{ marginBottom: '1rem' }}>
+      <circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/>
+    </svg>
     <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Integrity First</h4>
     <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>The false must never be confused with the true. Clarity, honesty, and verification are non-negotiable across every touchpoint.</p>
   </div>
-  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', transition: 'border-color 0.22s, transform 0.22s' }}>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--truf-lime-500)" strokeWidth="1.8" style={{ marginBottom: '1rem' }}>
+      <path d="M3 12h4l3-9 4 18 3-9h4"/>
+    </svg>
     <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Always Ahead</h4>
     <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>We stay ahead of threats. Interfaces feel responsive, anticipatory, and lightweight — performance is a feature, not a fix.</p>
   </div>
-  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', transition: 'border-color 0.22s, transform 0.22s' }}>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--truf-lime-500)" strokeWidth="1.8" style={{ marginBottom: '1rem' }}>
+      <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+    </svg>
     <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Human at the Center</h4>
     <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>Biometrics are personal. Every flow treats users with dignity — no cold, mechanical language or surveillance aesthetics.</p>
   </div>
-  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)' }}>
+  <div style={{ padding: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', transition: 'border-color 0.22s, transform 0.22s' }}>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--truf-lime-500)" strokeWidth="1.8" style={{ marginBottom: '1rem' }}>
+      <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+    </svg>
     <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 500, margin: '0 0 0.5rem', color: 'var(--text-primary)' }}>Engineered Minimalism</h4>
     <p style={{ fontSize: '0.875rem', margin: 0, lineHeight: 1.55, color: 'var(--text-secondary)' }}>Technical precision meets refined restraint. No decoration without function. Every element earns its place on the canvas.</p>
   </div>
 </div>
 
-## Design Philosophy
+<h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--text-muted)', margin: '100px 0 1rem', paddingBottom: '0.5rem', borderBottom: '1px dashed var(--border)' }}>Design Philosophy</h3>
 
-Inspired by the rigor of Material Design and the flexibility of MUI, but shaped by Truf's singular voice. We believe in **material honesty** — digital surfaces should feel like what they are, never mimicking physical objects for their own sake. We pair **technological clarity** (crisp edges, monospace accents, scan-frame iconography) with **editorial warmth** (italic serifs, cream surfaces, generous whitespace).
+<p style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>Inspired by the rigor of Material Design and the flexibility of MUI, but shaped by Truf's singular voice. We believe in <strong style={{ color: 'var(--text-primary)' }}>material honesty</strong> — digital surfaces should feel like what they are, never mimicking physical objects for their own sake. We pair <strong style={{ color: 'var(--text-primary)' }}>technological clarity</strong> (crisp edges, monospace accents, scan-frame iconography) with <strong style={{ color: 'var(--text-primary)' }}>editorial warmth</strong> (italic serifs, cream surfaces, generous whitespace).</p>
 
-## UX Principles
+<h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--text-muted)', margin: '100px 0 1rem', paddingBottom: '0.5rem', borderBottom: '1px dashed var(--border)' }}>UX Principles</h3>
 
-| Principle | Manifestation |
-|-----------|--------------|
-| **Clarity** | One primary action per view. Visible hierarchy. No ambiguous labels. |
-| **Hierarchy** | Scale, weight, and color combine — never decoration alone — to guide the eye. |
-| **Feedback** | Every action gets a response within 100ms. Loading, success, error states are first-class. |
-| **Consistency** | Patterns repeat across products. If a pattern exists, use it before inventing a new one. |
-| **Progressive Disclosure** | Reveal complexity only when needed. Defaults should succeed for 80% of users. |
+<div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', overflow: 'hidden' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', background: 'var(--surface-2)', borderBottom: '1px solid var(--border)', fontFamily: 'var(--font-mono)', fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)' }}>
+    <span>Principle</span><span>Manifestation</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)', fontSize: '0.875rem' }}>
+    <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Clarity</span><span style={{ color: 'var(--text-muted)' }}>One primary action per view. Visible hierarchy. No ambiguous labels.</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)', fontSize: '0.875rem' }}>
+    <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Hierarchy</span><span style={{ color: 'var(--text-muted)' }}>Scale, weight, and color combine — never decoration alone — to guide the eye.</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)', fontSize: '0.875rem' }}>
+    <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Feedback</span><span style={{ color: 'var(--text-muted)' }}>Every action gets a response within 100ms. Loading, success, error states are first-class.</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)', fontSize: '0.875rem' }}>
+    <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Consistency</span><span style={{ color: 'var(--text-muted)' }}>Patterns repeat across products. If a pattern exists, use it before inventing a new one.</span>
+  </div>
+  <div style={{ display: 'grid', gridTemplateColumns: '180px 1fr', padding: '0.75rem 1.25rem', background: 'var(--surface)', fontSize: '0.875rem' }}>
+    <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>Progressive Disclosure</span><span style={{ color: 'var(--text-muted)' }}>Reveal complexity only when needed. Defaults should succeed for 80% of users.</span>
+  </div>
+</div>
