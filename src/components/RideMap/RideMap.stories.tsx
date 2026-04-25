@@ -8,6 +8,9 @@ const meta: Meta<typeof RideMap> = {
   component: RideMap,
   parameters: { layout: 'centered' },
   tags: ['autodocs'],
+  argTypes: {
+    apiKey: { table: { disable: true } },
+  },
   decorators: [(Story) => <div style={{ width: '600px' }}><Story /></div>],
 };
 
